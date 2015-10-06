@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var deckView: UIView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var completedView: UIView!
+    @IBOutlet weak var Open: UIBarButtonItem!
     
     override func viewDidLoad() {
         
@@ -23,6 +24,13 @@ class ViewController: UIViewController {
         deckView.hidden = false
         completedView.hidden = true
         progressView.hidden = true
+        
+        // Set actions to be able to open the left sidebar menu
+        Open.target = self.revealViewController()
+        Open.action = Selector("revealToggle:")
+        
+        // Set gesture swipe to open sidebar menu on left
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         // Hide the navigation bar bottom border
         self.navigationController?.navigationBar.shadowImage = UIImage()
