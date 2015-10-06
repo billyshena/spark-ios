@@ -24,8 +24,9 @@ class ViewController: UIViewController {
         completedView.hidden = true
         progressView.hidden = true
         
-        // Remove border on navigation bar
-        self.navigationController?.navigationBar.clipsToBounds = true
+        // Hide the navigation bar bottom border
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         
         // Create logo UIImage object and set it as the navigation main title
         let image = UIImage(named: "logo.png")
