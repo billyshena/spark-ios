@@ -14,6 +14,8 @@
 		8D32143B1BC3D96D008FF0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3214391BC3D96D008FF0B8 /* LaunchScreen.storyboard */; };
 		8D3214461BC3D96D008FF0B8 /* sparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214451BC3D96D008FF0B8 /* sparkTests.swift */; };
 		8D3214511BC3D96E008FF0B8 /* sparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214501BC3D96E008FF0B8 /* sparkUITests.swift */; };
+		8D3214601BC41236008FF0B8 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32145E1BC41236008FF0B8 /* DeckViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3214641BC41355008FF0B8 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214621BC41355008FF0B8 /* ProgressViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8D32144C1BC3D96D008FF0B8 /* sparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3214501BC3D96E008FF0B8 /* sparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparkUITests.swift; sourceTree = "<group>"; };
 		8D3214521BC3D96E008FF0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D32145E1BC41236008FF0B8 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
+		8D3214621BC41355008FF0B8 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				8D3214371BC3D96D008FF0B8 /* Assets.xcassets */,
 				8D3214391BC3D96D008FF0B8 /* LaunchScreen.storyboard */,
 				8D32143C1BC3D96D008FF0B8 /* Info.plist */,
+				8D32145E1BC41236008FF0B8 /* DeckViewController.swift */,
+				8D3214621BC41355008FF0B8 /* ProgressViewController.swift */,
 			);
 			path = spark;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			files = (
 				8D3214331BC3D96D008FF0B8 /* ViewController.swift in Sources */,
 				8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */,
+				8D3214601BC41236008FF0B8 /* DeckViewController.swift in Sources */,
+				8D3214641BC41355008FF0B8 /* ProgressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
