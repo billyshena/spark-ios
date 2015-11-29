@@ -2,7 +2,7 @@
 //  ProgressViewController.swift
 //  spark
 //
-//  Created by Billy Shen on 06/10/2015.
+//  Created by Billy Shen on 11/10/2015.
 //  Copyright © 2015 Billy Shen. All rights reserved.
 //
 
@@ -12,8 +12,7 @@ class ProgressViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ProgressViewCtrl")
-
+        print("ProgressViewController")
         // Do any additional setup after loading the view.
     }
 

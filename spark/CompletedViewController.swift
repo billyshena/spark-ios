@@ -1,5 +1,5 @@
 //
-//  DeckViewController.swift
+//  CompletedViewController.swift
 //  spark
 //
 //  Created by Billy Shen on 11/10/2015.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class DeckViewController: UINavigationController {
-
+class CompletedViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print("DeckViewController")
+        print("CompletedViewController")
         // Do any additional setup after loading the view.
     }
 

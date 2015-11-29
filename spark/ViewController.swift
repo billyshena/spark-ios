@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var progressView: UIView!
+
     @IBOutlet weak var deckView: UIView!
+ 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var completedView: UIView!
     @IBOutlet weak var Open: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -22,8 +22,7 @@ class ViewController: UIViewController {
         
         // Show the first view and hide the other ones
         deckView.hidden = false
-        completedView.hidden = true
-        progressView.hidden = true
+   
         
         // Set actions to be able to open the left sidebar menu
         Open.target = self.revealViewController()
@@ -53,16 +52,10 @@ class ViewController: UIViewController {
         {
         case 0:
             deckView.hidden = false
-            completedView.hidden = true
-            progressView.hidden = true
         case 1:
             deckView.hidden = true
-            completedView.hidden = true
-            progressView.hidden = false
         case 2:
             deckView.hidden = true
-            completedView.hidden = false
-            progressView.hidden = true
         default:
             break;
         }
