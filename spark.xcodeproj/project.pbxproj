@@ -21,6 +21,7 @@
 		8D3214461BC3D96D008FF0B8 /* sparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214451BC3D96D008FF0B8 /* sparkTests.swift */; };
 		8D3214511BC3D96E008FF0B8 /* sparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214501BC3D96E008FF0B8 /* sparkUITests.swift */; };
 		8D3214A91BC4493E008FF0B8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214A81BC4493E008FF0B8 /* SWRevealViewController.m */; };
+		8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 		8D2792711BCAE836008588BD /* DeckViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeckViewController.xib; sourceTree = "<group>"; };
 		8D2792741BCAE846008588BD /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		8D2792751BCAE846008588BD /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
-		8D32142D1BC3D96D008FF0B8 /* spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D32142D1BC3D96D008FF0B8 /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3214321BC3D96D008FF0B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D3214351BC3D96D008FF0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		8D3214A61BC4493D008FF0B8 /* spark-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spark-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D3214A71BC4493E008FF0B8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8D3214A81BC4493E008FF0B8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,7 @@
 		8D32142E1BC3D96D008FF0B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D32142D1BC3D96D008FF0B8 /* spark.app */,
+				8D32142D1BC3D96D008FF0B8 /* Spark.app */,
 				8D3214411BC3D96D008FF0B8 /* sparkTests.xctest */,
 				8D32144C1BC3D96D008FF0B8 /* sparkUITests.xctest */,
 			);
@@ -126,6 +128,7 @@
 				8D2792711BCAE836008588BD /* DeckViewController.xib */,
 				8D2792741BCAE846008588BD /* ProgressViewController.swift */,
 				8D2792751BCAE846008588BD /* ProgressViewController.xib */,
+				8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */,
 			);
 			path = spark;
 			sourceTree = "<group>";
@@ -175,7 +178,7 @@
 			);
 			name = spark;
 			productName = spark;
-			productReference = 8D32142D1BC3D96D008FF0B8 /* spark.app */;
+			productReference = 8D32142D1BC3D96D008FF0B8 /* Spark.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8D3214401BC3D96D008FF0B8 /* sparkTests */ = {
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */,
 				8D27926E1BCAE7EA008588BD /* CompletedViewController.swift in Sources */,
 				8D3214331BC3D96D008FF0B8 /* ViewController.swift in Sources */,
 				8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */,
@@ -443,7 +447,7 @@
 				INFOPLIST_FILE = spark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.mobile.spark;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Spark;
 				SWIFT_OBJC_BRIDGING_HEADER = "spark/spark-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -458,7 +462,7 @@
 				INFOPLIST_FILE = spark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.mobile.spark;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Spark;
 				SWIFT_OBJC_BRIDGING_HEADER = "spark/spark-Bridging-Header.h";
 			};
 			name = Release;

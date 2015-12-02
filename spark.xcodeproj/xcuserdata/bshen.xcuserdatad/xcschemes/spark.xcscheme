@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8D32142C1BC3D96D008FF0B8"
-               BuildableName = "spark.app"
+               BuildableName = "Spark.app"
                BlueprintName = "spark"
                ReferencedContainer = "container:spark.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D32142C1BC3D96D008FF0B8"
-            BuildableName = "spark.app"
+            BuildableName = "Spark.app"
             BlueprintName = "spark"
             ReferencedContainer = "container:spark.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D32142C1BC3D96D008FF0B8"
-            BuildableName = "spark.app"
+            BuildableName = "Spark.app"
             BlueprintName = "spark"
             ReferencedContainer = "container:spark.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D32142C1BC3D96D008FF0B8"
-            BuildableName = "spark.app"
+            BuildableName = "Spark.app"
             BlueprintName = "spark"
             ReferencedContainer = "container:spark.xcodeproj">
          </BuildableReference>
