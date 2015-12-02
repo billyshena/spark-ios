@@ -13,6 +13,9 @@
 		8D2792731BCAE836008588BD /* DeckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2792711BCAE836008588BD /* DeckViewController.xib */; };
 		8D2792761BCAE846008588BD /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2792741BCAE846008588BD /* ProgressViewController.swift */; };
 		8D2792771BCAE846008588BD /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2792751BCAE846008588BD /* ProgressViewController.xib */; };
+		8D28E7D61C0F3A81009321E9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */; };
+		8D28E9931C0F3AA6009321E9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */; };
+		8D28E9CF1C0F4568009321E9 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */; };
 		8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */; };
 		8D3214331BC3D96D008FF0B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214321BC3D96D008FF0B8 /* ViewController.swift */; };
 		8D3214361BC3D96D008FF0B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3214341BC3D96D008FF0B8 /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 		8D2792711BCAE836008588BD /* DeckViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeckViewController.xib; sourceTree = "<group>"; };
 		8D2792741BCAE846008588BD /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		8D2792751BCAE846008588BD /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
+		8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		8D32142D1BC3D96D008FF0B8 /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3214321BC3D96D008FF0B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D28E9931C0F3AA6009321E9 /* FBSDKLoginKit.framework in Frameworks */,
+				8D28E7D61C0F3A81009321E9 /* FBSDKCoreKit.framework in Frameworks */,
+				8D28E9CF1C0F4568009321E9 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +101,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D28E7CB1C0F21FC009321E9 /* Imports */ = {
+			isa = PBXGroup;
+			children = (
+				8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */,
+				8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */,
+				8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */,
+			);
+			name = Imports;
+			sourceTree = "<group>";
+		};
+		8D28E9DC1C0F6EB1009321E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */,
+				8D3214321BC3D96D008FF0B8 /* ViewController.swift */,
+				8D27926C1BCAE7EA008588BD /* CompletedViewController.swift */,
+				8D27926D1BCAE7EA008588BD /* CompletedViewController.xib */,
+				8D2792701BCAE836008588BD /* DeckViewController.swift */,
+				8D2792711BCAE836008588BD /* DeckViewController.xib */,
+				8D2792741BCAE846008588BD /* ProgressViewController.swift */,
+				8D2792751BCAE846008588BD /* ProgressViewController.xib */,
+				8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D28E9DD1C0F6F0F009321E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		8D3214241BC3D96D008FF0B8 = {
 			isa = PBXGroup;
 			children = (
@@ -115,20 +157,14 @@
 		8D32142F1BC3D96D008FF0B8 /* spark */ = {
 			isa = PBXGroup;
 			children = (
+				8D28E9DD1C0F6F0F009321E9 /* Models */,
+				8D28E9DC1C0F6EB1009321E9 /* ViewControllers */,
+				8D28E7CB1C0F21FC009321E9 /* Imports */,
 				8D3214A51BC44928008FF0B8 /* Supporting Files */,
-				8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */,
-				8D3214321BC3D96D008FF0B8 /* ViewController.swift */,
 				8D3214341BC3D96D008FF0B8 /* Main.storyboard */,
 				8D3214371BC3D96D008FF0B8 /* Assets.xcassets */,
 				8D3214391BC3D96D008FF0B8 /* LaunchScreen.storyboard */,
 				8D32143C1BC3D96D008FF0B8 /* Info.plist */,
-				8D27926C1BCAE7EA008588BD /* CompletedViewController.swift */,
-				8D27926D1BCAE7EA008588BD /* CompletedViewController.xib */,
-				8D2792701BCAE836008588BD /* DeckViewController.swift */,
-				8D2792711BCAE836008588BD /* DeckViewController.xib */,
-				8D2792741BCAE846008588BD /* ProgressViewController.swift */,
-				8D2792751BCAE846008588BD /* ProgressViewController.xib */,
-				8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */,
 			);
 			path = spark;
 			sourceTree = "<group>";
@@ -444,6 +480,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/spark",
+					"$(PROJECT_DIR)/spark/FacebookSDKs-iOS-20151111",
+				);
 				INFOPLIST_FILE = spark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.mobile.spark;
@@ -459,8 +501,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/spark",
+					"$(PROJECT_DIR)/spark/FacebookSDKs-iOS-20151111",
+				);
 				INFOPLIST_FILE = spark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = app.mobile.spark;
 				PRODUCT_NAME = Spark;
 				SWIFT_OBJC_BRIDGING_HEADER = "spark/spark-Bridging-Header.h";
