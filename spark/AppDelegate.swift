@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?,
         annotation: AnyObject) -> Bool {
+            
+            handleSession();
             return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
             
     }
@@ -47,5 +49,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    
+    class func changeRootViewController(vc: UIViewController, animated: Bool = true) {
+        print("changeRootView", vc)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        print("1")
+        if var _ = appDelegate.window?.rootViewController {
+            print("2")
+            if animated {
+                print("3")
+                let snapShot = appDelegate.window!.snapshotViewAfterScreenUpdates(true)
+                vc.view.addSubview(snapShot)
+                print("4")
+                appDelegate.window?.rootViewController = vc
+                UIView.animateWithDuration(0.3, animations: { () -> Void in
+                    snapShot.layer.opacity = 0;
+                    snapShot.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1.5);
+                    }, completion: { (finished) -> Void in
+                        snapShot.removeFromSuperview()
+                })
+            }
+            else {
+                appDelegate.window?.rootViewController = vc
+            }
+        }
+    }
+    
+    func handleSession() {
+        print("handleSession()")
+        switch Session.accessType {
+        case .None:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            print("storyboard", storyboard)
+            self.window?.rootViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as? HomeViewController
+        case .FullAccess:
+            print("FullAccess")
+            // Récupérer le user via realm ou API
+        }
+    }
 }
 

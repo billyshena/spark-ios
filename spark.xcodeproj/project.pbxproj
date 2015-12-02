@@ -16,8 +16,15 @@
 		8D28E7D61C0F3A81009321E9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */; };
 		8D28E9931C0F3AA6009321E9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */; };
 		8D28E9CF1C0F4568009321E9 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */; };
+		8D28E9E01C0F790C009321E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9DF1C0F790C009321E9 /* Constants.swift */; };
+		8D28E9E21C0F7C39009321E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9E11C0F7C39009321E9 /* User.swift */; };
+		8D28E9E51C0F7CF2009321E9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9E41C0F7CF2009321E9 /* Router.swift */; };
+		8D28E9E81C0F7D5A009321E9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9E71C0F7D5A009321E9 /* AppError.swift */; };
+		8D28E9EA1C0F7D82009321E9 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9E91C0F7D82009321E9 /* Session.swift */; };
+		8D28E9EC1C0F7DFE009321E9 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9EB1C0F7DFE009321E9 /* FBManager.swift */; };
+		8D28E9EE1C0FAE8E009321E9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9ED1C0FAE8E009321E9 /* TestViewController.swift */; };
 		8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */; };
-		8D3214331BC3D96D008FF0B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214321BC3D96D008FF0B8 /* ViewController.swift */; };
+		8D3214331BC3D96D008FF0B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */; };
 		8D3214361BC3D96D008FF0B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3214341BC3D96D008FF0B8 /* Main.storyboard */; };
 		8D3214381BC3D96D008FF0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3214371BC3D96D008FF0B8 /* Assets.xcassets */; };
 		8D32143B1BC3D96D008FF0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3214391BC3D96D008FF0B8 /* LaunchScreen.storyboard */; };
@@ -25,6 +32,7 @@
 		8D3214511BC3D96E008FF0B8 /* sparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214501BC3D96E008FF0B8 /* sparkUITests.swift */; };
 		8D3214A91BC4493E008FF0B8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214A81BC4493E008FF0B8 /* SWRevealViewController.m */; };
 		8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */; };
+		B3905FBD73441F5B9E816073 /* Pods_spark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C709E35687AB86854DBE2E /* Pods_spark.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BD177973E737A4C7D2A9FA4 /* Pods-spark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spark.release.xcconfig"; path = "Pods/Target Support Files/Pods-spark/Pods-spark.release.xcconfig"; sourceTree = "<group>"; };
+		78C709E35687AB86854DBE2E /* Pods_spark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853765AF349A2B3E50F1A22F /* Pods-spark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spark/Pods-spark.debug.xcconfig"; sourceTree = "<group>"; };
 		8D27926C1BCAE7EA008588BD /* CompletedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewController.swift; sourceTree = "<group>"; };
 		8D27926D1BCAE7EA008588BD /* CompletedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompletedViewController.xib; sourceTree = "<group>"; };
 		8D2792701BCAE836008588BD /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
@@ -54,9 +65,16 @@
 		8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		8D28E9DF1C0F790C009321E9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D28E9E11C0F7C39009321E9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8D28E9E41C0F7CF2009321E9 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8D28E9E71C0F7D5A009321E9 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		8D28E9E91C0F7D82009321E9 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		8D28E9EB1C0F7DFE009321E9 /* FBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		8D28E9ED1C0FAE8E009321E9 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		8D32142D1BC3D96D008FF0B8 /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D3214321BC3D96D008FF0B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8D3214351BC3D96D008FF0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D3214371BC3D96D008FF0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D32143A1BC3D96D008FF0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,6 +99,7 @@
 				8D28E9931C0F3AA6009321E9 /* FBSDKLoginKit.framework in Frameworks */,
 				8D28E7D61C0F3A81009321E9 /* FBSDKCoreKit.framework in Frameworks */,
 				8D28E9CF1C0F4568009321E9 /* FBSDKShareKit.framework in Frameworks */,
+				B3905FBD73441F5B9E816073 /* Pods_spark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		285D68B5C595BA57C5E24D63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				853765AF349A2B3E50F1A22F /* Pods-spark.debug.xcconfig */,
+				4BD177973E737A4C7D2A9FA4 /* Pods-spark.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8D28E7CB1C0F21FC009321E9 /* Imports */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */,
-				8D3214321BC3D96D008FF0B8 /* ViewController.swift */,
+				8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */,
 				8D27926C1BCAE7EA008588BD /* CompletedViewController.swift */,
 				8D27926D1BCAE7EA008588BD /* CompletedViewController.xib */,
 				8D2792701BCAE836008588BD /* DeckViewController.swift */,
@@ -123,6 +151,7 @@
 				8D2792741BCAE846008588BD /* ProgressViewController.swift */,
 				8D2792751BCAE846008588BD /* ProgressViewController.xib */,
 				8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */,
+				8D28E9ED1C0FAE8E009321E9 /* TestViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -130,8 +159,35 @@
 		8D28E9DD1C0F6F0F009321E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8D28E9E11C0F7C39009321E9 /* User.swift */,
+				8D28E9E91C0F7D82009321E9 /* Session.swift */,
+				8D28E9EB1C0F7DFE009321E9 /* FBManager.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		8D28E9DE1C0F78F5009321E9 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				8D28E9DF1C0F790C009321E9 /* Constants.swift */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		8D28E9E31C0F7CC8009321E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D28E9E41C0F7CF2009321E9 /* Router.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8D28E9E61C0F7D49009321E9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8D28E9E71C0F7D5A009321E9 /* AppError.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		8D3214241BC3D96D008FF0B8 = {
@@ -141,6 +197,8 @@
 				8D3214441BC3D96D008FF0B8 /* sparkTests */,
 				8D32144F1BC3D96D008FF0B8 /* sparkUITests */,
 				8D32142E1BC3D96D008FF0B8 /* Products */,
+				285D68B5C595BA57C5E24D63 /* Pods */,
+				F8DF2D76121BD41B8F963F89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +215,9 @@
 		8D32142F1BC3D96D008FF0B8 /* spark */ = {
 			isa = PBXGroup;
 			children = (
+				8D28E9E61C0F7D49009321E9 /* Utils */,
+				8D28E9E31C0F7CC8009321E9 /* Services */,
+				8D28E9DE1C0F78F5009321E9 /* Defines */,
 				8D28E9DD1C0F6F0F009321E9 /* Models */,
 				8D28E9DC1C0F6EB1009321E9 /* ViewControllers */,
 				8D28E7CB1C0F21FC009321E9 /* Imports */,
@@ -197,6 +258,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F8DF2D76121BD41B8F963F89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78C709E35687AB86854DBE2E /* Pods_spark.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3214551BC3D96E008FF0B8 /* Build configuration list for PBXNativeTarget "spark" */;
 			buildPhases = (
+				67EE3E78D2E83E003624B808 /* Check Pods Manifest.lock */,
 				8D3214291BC3D96D008FF0B8 /* Sources */,
 				8D32142A1BC3D96D008FF0B8 /* Frameworks */,
 				8D32142B1BC3D96D008FF0B8 /* Resources */,
+				BF5307F99B8E021C1B30A540 /* Embed Pods Frameworks */,
+				44DAC0801B454F81832C6372 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,18 +399,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44DAC0801B454F81832C6372 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spark/Pods-spark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67EE3E78D2E83E003624B808 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF5307F99B8E021C1B30A540 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spark/Pods-spark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D3214291BC3D96D008FF0B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D28E9EE1C0FAE8E009321E9 /* TestViewController.swift in Sources */,
 				8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */,
 				8D27926E1BCAE7EA008588BD /* CompletedViewController.swift in Sources */,
-				8D3214331BC3D96D008FF0B8 /* ViewController.swift in Sources */,
+				8D28E9E51C0F7CF2009321E9 /* Router.swift in Sources */,
+				8D3214331BC3D96D008FF0B8 /* HomeViewController.swift in Sources */,
+				8D28E9EC1C0F7DFE009321E9 /* FBManager.swift in Sources */,
 				8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */,
 				8D2792761BCAE846008588BD /* ProgressViewController.swift in Sources */,
+				8D28E9E21C0F7C39009321E9 /* User.swift in Sources */,
 				8D3214A91BC4493E008FF0B8 /* SWRevealViewController.m in Sources */,
+				8D28E9EA1C0F7D82009321E9 /* Session.swift in Sources */,
+				8D28E9E81C0F7D5A009321E9 /* AppError.swift in Sources */,
 				8D2792721BCAE836008588BD /* DeckViewController.swift in Sources */,
+				8D28E9E01C0F790C009321E9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +603,7 @@
 		};
 		8D3214561BC3D96E008FF0B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853765AF349A2B3E50F1A22F /* Pods-spark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -497,6 +625,7 @@
 		};
 		8D3214571BC3D96E008FF0B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD177973E737A4C7D2A9FA4 /* Pods-spark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -68,6 +68,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1869" y="203"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="0GR-2u-b25">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" id="463-Jp-Uxn" customClass="TestViewController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6C7-Pp-eRs"/>
+                        <viewControllerLayoutGuide type="bottom" id="GV8-Xs-T1P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tuQ-IN-0tU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84f-gf-vNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701" y="1206"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="oPb-3y-y14">
@@ -135,7 +153,7 @@
         <!--Reveal View Controller-->
         <scene sceneID="RG6-Mq-3Yc">
             <objects>
-                <viewController id="ZFt-wr-yIb" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWRevealViewController" id="ZFt-wr-yIb" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e5K-WT-58o"/>
                         <viewControllerLayoutGuide type="bottom" id="GR0-9o-jBs"/>
@@ -206,6 +224,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="connectFb:" destination="WgZ-5D-2Lk" eventType="touchUpInside" id="jWC-mV-5za"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5S-Ty-WdC">
                                 <rect key="frame" x="76" y="534" width="693" height="33"/>

@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
 
     @IBOutlet weak var deckView: UIView!
@@ -39,7 +39,6 @@ class ViewController: UIViewController {
         // Create logo UIImage object and set it as the navigation main title
         let image = UIImage(named: "logo.png")
         self.navigationItem.titleView = UIImageView(image: image)
-
     }
 
     override func didReceiveMemoryWarning() {
