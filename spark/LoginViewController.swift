@@ -40,26 +40,19 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func connectFb(sender: UIButton) {
-        
-        print("Hello I'm pressed")
+      
         User.openSession { (connected, appError) -> Void in
             // Récupère les infos user depuis l'API
             if let userId = Session.sessionInfos().userId {
                 User.getUser(userId, completionHandler: { (user, appError) -> Void in
+    
                     print("user", user)
                     if let _ = user {
                         
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let vc = storyboard.instantiateViewControllerWithIdentifier("SWRevealViewController") as! SWRevealViewController
-                        self.presentViewController(vc, animated: true, completion: nil)
-                        //let homeViewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
                         
-                        
-                        //print("viewController", homeViewController)
-                        
-                        //self.presentViewController(homeViewController, animated: true, completion: nil)
-                        
-                        //AppDelegate.changeRootViewController(homeViewController, animated: true)
+                        AppDelegate.changeRootViewController(vc, animated: true)
                     }
                 })
             }

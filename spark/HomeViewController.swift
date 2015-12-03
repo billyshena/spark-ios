@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         // Show the first view and hide the other ones
-        deckView.hidden = false
+        //deckView.hidden = false
    
         
         // Set actions to be able to open the left sidebar menu

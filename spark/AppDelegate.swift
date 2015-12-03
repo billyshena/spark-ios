@@ -14,9 +14,6 @@ import FBSDKLoginKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
- 
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?,
         annotation: AnyObject) -> Bool {
@@ -54,16 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     
     class func changeRootViewController(vc: UIViewController, animated: Bool = true) {
-        print("changeRootView", vc)
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        print("1")
         if var _ = appDelegate.window?.rootViewController {
-            print("2")
             if animated {
-                print("3")
                 let snapShot = appDelegate.window!.snapshotViewAfterScreenUpdates(true)
                 vc.view.addSubview(snapShot)
-                print("4")
                 appDelegate.window?.rootViewController = vc
                 UIView.animateWithDuration(0.3, animations: { () -> Void in
                     snapShot.layer.opacity = 0;
@@ -79,12 +71,11 @@ extension AppDelegate {
     }
     
     func handleSession() {
-        print("handleSession()")
         switch Session.accessType {
         case .None:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             print("storyboard", storyboard)
-            self.window?.rootViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as? HomeViewController
+            self.window?.rootViewController = storyboard.instantiateViewControllerWithIdentifier("SWRevealViewController") as? SWRevealViewController
         case .FullAccess:
             print("FullAccess")
             // Récupérer le user via realm ou API

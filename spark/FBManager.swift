@@ -22,7 +22,6 @@ public class FBManager {
             }
             else {
                 let facebookToken = FBSDKAccessToken.currentAccessToken().tokenString
-                print("facebookToken", facebookToken)
                 completionHandler(facebookToken, nil)
             }
         }

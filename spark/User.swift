@@ -122,7 +122,6 @@ extension User {
     
     static func connectUser(tokenFB: String, completionHandler: (Bool?, AppError?) -> Void) -> Void {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        print("connectUser")
         Router.PostUserFromFacebook(tokenFB).performRequest { (json, error) in
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             if let error = error {
@@ -130,7 +129,6 @@ extension User {
             }
             else if let json: AnyObject = json {
                 let json = JSON(json)
-                print("json", json)
                 if json.type == .Dictionary {
                     let session = Session.createSessionFromJSON(json)
                     if let sessionFilled = session {
