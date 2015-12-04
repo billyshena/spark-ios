@@ -8,13 +8,24 @@
 
 import Foundation
 
-
-
 class AsideNavController: UITableViewController {
+    
+    @IBOutlet weak var avatar: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set table background color
         self.tableView.backgroundColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
+        self.tableView.tableFooterView = UIView(frame: CGRectZero)
+        
+        // Avatar rounded circle
+        avatar.layer.borderWidth=1.0
+        avatar.layer.masksToBounds = false
+        avatar.layer.borderColor = UIColor.whiteColor().CGColor
+        avatar.layer.cornerRadius = 56.0
+        avatar.clipsToBounds = true
+        
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
