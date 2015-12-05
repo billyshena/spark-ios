@@ -12,9 +12,11 @@ import UIKit
 class HomeViewController: UIViewController {
 
 
+
     @IBOutlet weak var deckView: UIView!
- 
-    @IBOutlet weak var deckView2: UIView!
+//    @IBOutlet weak var progressView: UIView!
+//    @IBOutlet weak var completedView: UIView!
+    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var Open: UIBarButtonItem!
     
@@ -23,7 +25,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         // Show the first view and hide the other ones
-        //deckView.hidden = false
+        deckView.hidden = false
    
         
         // Set actions to be able to open the left sidebar menu
@@ -52,10 +54,16 @@ class HomeViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
+//            progressView.hidden = true
+//            completedView.hidden = true
             deckView.hidden = false
         case 1:
+//            progressView.hidden = false
+//            completedView.hidden = true
             deckView.hidden = true
         case 2:
+//            completedView.hidden = false
+//            progressView.hidden = true
             deckView.hidden = true
         default:
             break;
