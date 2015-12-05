@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var deckView: UIView!
  
+    @IBOutlet weak var deckView2: UIView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var Open: UIBarButtonItem!
     
@@ -30,15 +31,15 @@ class HomeViewController: UIViewController {
         Open.action = Selector("revealToggle:")
         
         // Set gesture swipe to open sidebar menu on left
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         // Hide the navigation bar bottom border
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         
         // Create logo UIImage object and set it as the navigation main title
         let image = UIImage(named: "logo.png")
-        self.navigationItem.titleView = UIImageView(image: image)
+        navigationItem.titleView = UIImageView(image: image)
     }
 
     override func didReceiveMemoryWarning() {
