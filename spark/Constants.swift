@@ -25,6 +25,9 @@ struct Constants {
     }
     
     struct Colors {
+        
+        static let bgLightGrey = UIColor(red:0.93, green:0.94, blue:0.93, alpha:1.0)
+        static let cardBorder = UIColor(red:0.88, green:0.91, blue:0.93, alpha:1.0).CGColor
     
     }
     

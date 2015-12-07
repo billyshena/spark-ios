@@ -33,6 +33,7 @@
 		8D3214A91BC4493E008FF0B8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214A81BC4493E008FF0B8 /* SWRevealViewController.m */; };
 		8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */; };
 		8DD70A921C109DE700596846 /* AsideNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD70A911C109DE700596846 /* AsideNavController.swift */; };
+		8DFBCDEC1C1488DE00921959 /* DeckViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */; };
 		B3905FBD73441F5B9E816073 /* Pods_spark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C709E35687AB86854DBE2E /* Pods_spark.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		8D3214A81BC4493E008FF0B8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8DD70A911C109DE700596846 /* AsideNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsideNavController.swift; sourceTree = "<group>"; };
+		8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */,
 				8D28E9F01C108788009321E9 /* TestViewController.swift */,
 				8DD70A911C109DE700596846 /* AsideNavController.swift */,
+				8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				8D28E9E81C0F7D5A009321E9 /* AppError.swift in Sources */,
 				8D2792721BCAE836008588BD /* DeckViewController.swift in Sources */,
 				8D28E9E01C0F790C009321E9 /* Constants.swift in Sources */,
+				8DFBCDEC1C1488DE00921959 /* DeckViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
