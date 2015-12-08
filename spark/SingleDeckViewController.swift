@@ -12,8 +12,15 @@ class SingleDeckViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("SingleDeckViewController")
-        // Do any additional setup after loading the view.
+
+        
+        navigationController?.navigationBar.shadowImage = UIImage()
+   
+        
+        let image = UIImage(named: "logo.png")
+        navigationItem.titleView = UIImageView(image: image)
+        self.view.backgroundColor = UIColor.lightGrayColor()
+
 
     }
     
