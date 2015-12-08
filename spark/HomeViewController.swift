@@ -54,6 +54,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Create logo UIImage object and set it as the navigation main title
         let image = UIImage(named: "logo.png")
         navigationItem.titleView = UIImageView(image: image)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,6 +86,10 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
         
         print("cell is clicked")
+        
+
+
+
     }
 
     

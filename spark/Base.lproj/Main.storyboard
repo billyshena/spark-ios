@@ -70,6 +70,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="GJ2-cX-Gwi" id="tkc-rI-Ld2"/>
+                                            <segue destination="0kf-Py-Ltd" kind="presentation" id="yte-Oa-yFa"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -108,6 +109,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1873" y="209"/>
+        </scene>
+        <!--Single View Controller-->
+        <scene sceneID="ZED-Dj-vQq">
+            <objects>
+                <viewController title="Single View Controller" id="e5J-zZ-rvc" customClass="SingleDeckViewController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cvf-j2-kA7"/>
+                        <viewControllerLayoutGuide type="bottom" id="BV6-Tt-7RX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X24-EK-doF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2f-Vs-s1p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99991267919540405" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="dezdzed" id="9Wa-yk-pKn">
+                        <barButtonItem key="rightBarButtonItem" title="close" id="Kow-bR-8hq"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zx5-tY-WOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2477" y="890"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="RG6-Mq-3Yc">
@@ -612,6 +640,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTU-ac-ygp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="849" y="-637"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kog-O9-VfD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0kf-Py-Ltd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SaP-mC-pVW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e5J-zZ-rvc" kind="relationship" relationship="rootViewController" id="0mz-Lf-NCN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTW-ND-Z0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="890"/>
         </scene>
     </scenes>
     <resources>
