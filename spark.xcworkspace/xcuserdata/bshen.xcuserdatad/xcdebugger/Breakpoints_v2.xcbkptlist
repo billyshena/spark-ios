@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spark/HomeViewController.swift"
+            timestampString = "471370504.128525"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Spark.HomeViewController.__deallocating_deinit"
+                  moduleName = "Spark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bshen/Desktop/spark/spark-ios/spark/HomeViewController.swift"
+                  timestampString = "471370504.244337"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Spark.HomeViewController.init (Spark.HomeViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Spark.HomeViewController"
+                  moduleName = "Spark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bshen/Desktop/spark/spark-ios/spark/HomeViewController.swift"
+                  timestampString = "471370504.246544"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Spark.HomeViewController.init (Spark.HomeViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Spark.HomeViewController&gt;"
+                  moduleName = "Spark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bshen/Desktop/spark/spark-ios/spark/HomeViewController.swift"
+                  timestampString = "471370504.246756"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spark/HomeViewController.swift"
+            timestampString = "471370504.773691"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Spark.HomeViewController.__deallocating_deinit"
+                  moduleName = "Spark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bshen/Desktop/spark/spark-ios/spark/HomeViewController.swift"
+                  timestampString = "471370504.77626"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Spark.HomeViewController.init (Spark.HomeViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Spark.HomeViewController"
+                  moduleName = "Spark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bshen/Desktop/spark/spark-ios/spark/HomeViewController.swift"
+                  timestampString = "471370504.776591"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Spark.HomeViewController.init (Spark.HomeViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Spark.HomeViewController&gt;"
+                  moduleName = "Spark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bshen/Desktop/spark/spark-ios/spark/HomeViewController.swift"
+                  timestampString = "471370504.776862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

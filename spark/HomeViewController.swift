@@ -9,7 +9,7 @@
 import UIKit
 
 
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
 
 
 
@@ -57,16 +57,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Create logo UIImage object and set it as the navigation main title
         let image = UIImage(named: "logo.png")
         navigationItem.titleView = UIImageView(image: image)
-        
-        
-        screenSize = UIScreen.mainScreen().bounds
-        screenWidth = screenSize.width
-        screenHeight = screenSize.height
-        
-        // Do any additional setup after loading the view, typically from a nib
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: screenWidth / 2, height: screenWidth / 2)
+    
 
         
     }
@@ -77,10 +68,13 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     
+    // Returns the number of elements
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.decks.count
     }
     
+    
+    // Creating the custom cell
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! DeckViewCell
@@ -96,37 +90,33 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return cell
     }
     
+    // Return the height and width of a cell according to the screen size
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+    {
+        return CGSize(width: (collectionView.frame.size.width - 20)/2, height: collectionView.frame.size.height/3)
+    }
     
+    
+    // Listener when a cell is selected
     func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
         
         print("cell is clicked")
-        
-
-
-
     }
-
+    
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        
+        return UIEdgeInsetsMake(5, 5, 5, 5);
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+    
+        return 5
+    }
     
     
 
-//    @IBAction func indexChanged(sender: UISegmentedControl) {
-//        switch segmentedControl.selectedSegmentIndex
-//        {
-//        case 0:
-////            progressView.hidden = true
-////            completedView.hidden = true
-////            deckView.hidden = false
-//        case 1:
-////            progressView.hidden = false
-////            completedView.hidden = true
-////            deckView.hidden = true
-//        case 2:
-////            completedView.hidden = false
-////            progressView.hidden = true
-////            deckView.hidden = true
-//        default:
-//            break;
-//        }
-//    }
+
+
 }
 
