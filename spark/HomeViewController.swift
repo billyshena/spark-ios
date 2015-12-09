@@ -29,13 +29,16 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         UIImage(named: "relationship"),
         UIImage(named: "nature")
     ]
+    var screenSize: CGRect!
+    var screenWidth: CGFloat!
+    var screenHeight: CGFloat!
+    
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         // Show the first view and hide the other ones
-//        deckView.hidden = false
         deckView.backgroundColor = Constants.Colors.bgLightGrey
 
         
@@ -54,6 +57,17 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Create logo UIImage object and set it as the navigation main title
         let image = UIImage(named: "logo.png")
         navigationItem.titleView = UIImageView(image: image)
+        
+        
+        screenSize = UIScreen.mainScreen().bounds
+        screenWidth = screenSize.width
+        screenHeight = screenSize.height
+        
+        // Do any additional setup after loading the view, typically from a nib
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: screenWidth / 2, height: screenWidth / 2)
+
         
     }
 
