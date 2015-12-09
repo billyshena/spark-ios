@@ -10,7 +10,13 @@ import UIKit
 
 class DeckViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var separator: UIView!
 
+    @IBOutlet weak var likes: UILabel!
+    
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var owner: UILabel!
+    
+    @IBOutlet weak var deckName: UILabel!
 }

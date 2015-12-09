@@ -20,15 +20,20 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var Open: UIBarButtonItem!
     let decks = [
+        UIImage(named: "music"),
+        UIImage(named: "sport"),
         UIImage(named: "travel"),
-        UIImage(named: "adventure"),
+        UIImage(named: "culture"),
         UIImage(named: "food"),
         UIImage(named: "history"),
-        UIImage(named: "animals"),
-        UIImage(named: "culture"),
-        UIImage(named: "relationship"),
+        UIImage(named: "sex"),
         UIImage(named: "nature")
     ]
+    let names = [ "Music", "Sports", "Travel", "Culture", "Food", "History", "Sex", "Nature"]
+    let likes = ["336 likes" , "122 likes", "10 likes", "89 likes", "336 likes" , "122 likes", "10 likes", "89 likes"]
+
+    let owners = ["by spark", "by spark", "by spark", "by spark", "by spark", "by spark", "by spark", "by spark"]
+    
     var screenSize: CGRect!
     var screenWidth: CGFloat!
     var screenHeight: CGFloat!
@@ -80,9 +85,20 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! DeckViewCell
     
 
-        cell.imageView?.layer.borderColor = Constants.Colors.cardBorder
-        cell.imageView?.layer.borderWidth = 1
         cell.layer.cornerRadius = 6
+        cell.separator?.layer.cornerRadius = (cell.separator?.frame.size.width)! / 2
+        cell.separator?.alpha = 0.5
+        cell.deckName?.text = self.names[indexPath.row]
+        cell.deckName?.font = UIFont(name: "Helvetica Neue", size: 24)
+        
+        cell.likes?.font = UIFont(name: "Helvetica Neue", size: 11)
+        cell.likes?.text = self.likes[indexPath.row]
+        cell.likes?.alpha = 0.5
+        
+        cell.owner?.alpha = 0.5
+        cell.owner?.font = UIFont(name: "Helvetica Neue", size: 11)
+        cell.owner?.text = self.owners[indexPath.row]
+        
         cell.imageView?.layer.cornerRadius = 6
         cell.imageView?.image =  self.decks[indexPath.row]
 
@@ -93,7 +109,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // Return the height and width of a cell according to the screen size
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
-        return CGSize(width: (collectionView.frame.size.width - 20)/2, height: collectionView.frame.size.height/3)
+        return CGSize(width: (collectionView.frame.size.width - 38)/2, height: collectionView.frame.size.height/3)
     }
     
     
@@ -106,12 +122,16 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsetsMake(5, 5, 5, 5);
+        return UIEdgeInsetsMake(12, 12, 12, 12);
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
     
-        return 5
+        return 7
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 12
     }
     
     
