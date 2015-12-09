@@ -12,6 +12,7 @@ import UIKit
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
 
 
+    @IBOutlet weak var userPoints: UIBarButtonItem!
 
     @IBOutlet weak var deckView: UICollectionView!
 //    @IBOutlet weak var progressView: UIView!
@@ -34,6 +35,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     let owners = ["by spark", "by spark", "by spark", "by spark", "by spark", "by spark", "by spark", "by spark"]
     
+    let points = ["10", "35", "65", "100", "28", "13", "98", "77"]
+    
     var screenSize: CGRect!
     var screenWidth: CGFloat!
     var screenHeight: CGFloat!
@@ -51,6 +54,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         Open.target = self.revealViewController()
         Open.action = Selector("revealToggle:")
     
+        let font = UIFont(name: "Helvetica Neue", size: 18)
+        userPoints.setTitleTextAttributes([NSFontAttributeName: font!], forState:UIControlState.Normal)
         
         // Set gesture swipe to open sidebar menu on left
         view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -84,6 +89,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! DeckViewCell
     
+        cell.points?.text = self.points[indexPath.row]
 
         cell.layer.cornerRadius = 6
         cell.separator?.layer.cornerRadius = (cell.separator?.frame.size.width)! / 2

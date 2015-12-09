@@ -12,6 +12,8 @@ class DeckViewCell: UICollectionViewCell {
 
     @IBOutlet weak var separator: UIView!
 
+    @IBOutlet weak var points: UILabel!
+    
     @IBOutlet weak var likes: UILabel!
     
     @IBOutlet weak var imageView: UIImageView!
