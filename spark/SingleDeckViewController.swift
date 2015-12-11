@@ -10,16 +10,32 @@ import UIKit
 
 class SingleDeckViewController: UIViewController {
     
+    @IBOutlet weak var singleImage: UIImageView!
+    @IBOutlet weak var text: UILabel!
+    var image = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.singleImage.image = self.image
+
         navigationController?.navigationBar.shadowImage = UIImage()
-   
+        navigationController?.navigationBar.translucent = true
+        navigationController?.view.backgroundColor = UIColor.clearColor()
         
-        let image = UIImage(named: "logo.png")
-        navigationItem.titleView = UIImageView(image: image)
-        self.view.backgroundColor = UIColor.lightGrayColor()
+
+//        
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: self.view, style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
+        
+        let btn = UIButton()
+        btn.setImage(UIImage(named: "back"), forState: .Normal)
+        btn.frame = CGRectMake(0, 0, 12, 20)
+        btn.addTarget(self, action: "back:", forControlEvents: .TouchUpInside)
+        let button = UIBarButtonItem(customView: btn)
+        self.navigationItem.leftBarButtonItem = button
+        
+        
+
 
 
     }
@@ -28,6 +44,15 @@ class SingleDeckViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func back(sender: UIBarButtonItem) {
+        // Perform your custom actions
+        // ...
+        // Go back to the previous ViewController
+        print("back")
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+
     
     
     /*

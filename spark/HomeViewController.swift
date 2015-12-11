@@ -53,7 +53,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Set actions to be able to open the left sidebar menu
         Open.target = self.revealViewController()
         Open.action = Selector("revealToggle:")
-    
+//
         let font = UIFont(name: "Helvetica Neue", size: 18)
         userPoints.setTitleTextAttributes([NSFontAttributeName: font!], forState:UIControlState.Normal)
         
@@ -86,6 +86,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     // Creating the custom cell
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! DeckViewCell
     
@@ -112,6 +113,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return cell
     }
     
+
+    
     // Return the height and width of a cell according to the screen size
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
@@ -120,11 +123,27 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     // Listener when a cell is selected
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        print("cell is clicked")
+        print("cell is clicked", indexPath.row)
+        let cell = deckView.cellForItemAtIndexPath(indexPath)
+//        print("cell", cell)
+        
+        self.performSegueWithIdentifier("showSingle", sender: cell)
+  
     }
-    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("prepareSegue")
+        if(segue.identifier == "showSingle"){
+            let cell = sender as! UICollectionViewCell
+            if let indexPath = deckView.indexPathForCell(cell) {
+                let singleVC = segue.destinationViewController as! SingleDeckViewController
+                singleVC.image = self.decks[indexPath.row]!
+                
+            }
+        }
+    }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         
