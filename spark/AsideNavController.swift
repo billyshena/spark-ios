@@ -26,6 +26,8 @@ class AsideNavController: UITableViewController {
         avatar.layer.cornerRadius = 56.0
         avatar.clipsToBounds = true
         
+        self.navigationController?.navigationBarHidden = true
+        
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {

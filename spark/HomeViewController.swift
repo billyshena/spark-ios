@@ -140,6 +140,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             if let indexPath = deckView.indexPathForCell(cell) {
                 let singleVC = segue.destinationViewController as! SingleDeckViewController
                 singleVC.image = self.decks[indexPath.row]!
+                singleVC.text = self.names[indexPath.row]
+                singleVC.likeTxt = self.likes[indexPath.row]
+                singleVC.ownerTxt = self.owners[indexPath.row]
                 
             }
         }

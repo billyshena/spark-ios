@@ -10,14 +10,33 @@ import UIKit
 
 class SingleDeckViewController: UIViewController {
     
+    @IBOutlet weak var owner: UILabel!
+
+    @IBOutlet weak var like: UILabel!
+    @IBOutlet weak var deckName: UILabel!
     @IBOutlet weak var singleImage: UIImageView!
-    @IBOutlet weak var text: UILabel!
+    @IBOutlet weak var separator: UIView!
+    
     var image = UIImage()
+    var text = ""
+    var likeTxt = ""
+    var ownerTxt = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.singleImage.image = self.image
+        self.deckName.text = text
+        
+        self.like.alpha = 0.7
+        self.owner.alpha = 0.7
+        
+        self.like.text = likeTxt
+        self.owner.text = ownerTxt
+        
+        self.separator.layer.cornerRadius = self.separator.frame.size.width / 2
+        self.separator.alpha = 0.7
 
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.translucent = true
