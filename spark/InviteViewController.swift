@@ -24,8 +24,7 @@ class InviteViewController: UIViewController, UITableViewDataSource, UITableView
              self.inviteArray += [Invite(avatar: UIImage(), firstName: "Bpple", lastName: "Apple")]
              self.inviteArray += [Invite(avatar: UIImage(), firstName: "Cpple", lastName: "Apple")]
              self.inviteArray += [Invite(avatar: UIImage(), firstName: "Dpple", lastName: "Apple")]
-        
-        
+    
         self.users.reloadData()
         
     }
@@ -56,6 +55,7 @@ class InviteViewController: UIViewController, UITableViewDataSource, UITableView
         var invite: Invite
         invite = self.inviteArray[indexPath.row]
         print("invite", invite)
+        
     }
     
     

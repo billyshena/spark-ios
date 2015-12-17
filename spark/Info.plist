@@ -26,6 +26,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb1633195896935950</string>
+				<string>SparkApp</string>
 			</array>
 		</dict>
 	</array>

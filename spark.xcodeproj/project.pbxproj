@@ -83,6 +83,7 @@
 		8D3214A61BC4493D008FF0B8 /* spark-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spark-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D3214A71BC4493E008FF0B8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8D3214A81BC4493E008FF0B8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8D5698521C22CE74005581A6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Pods/../build/Debug-iphoneos/Bolts.framework"; sourceTree = "<group>"; };
 		8D6637AB1C1E4970001D6CF8 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		8D6637AD1C1E49EA001D6CF8 /* CompletedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewController.swift; sourceTree = "<group>"; };
 		8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +265,7 @@
 		F8DF2D76121BD41B8F963F89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D5698521C22CE74005581A6 /* Bolts.framework */,
 				78C709E35687AB86854DBE2E /* Pods_spark.framework */,
 			);
 			name = Frameworks;
@@ -617,6 +619,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/spark",
 					"$(PROJECT_DIR)/spark/FacebookSDKs-iOS-20151111",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = spark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -639,6 +642,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/spark",
 					"$(PROJECT_DIR)/spark/FacebookSDKs-iOS-20151111",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = spark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

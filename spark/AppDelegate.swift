@@ -10,6 +10,8 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import FBSDKShareKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?,
         annotation: AnyObject) -> Bool {
+        
             
-            
+            let parsedUrl:BFURL = BFURL(inboundURL: url, sourceApplication: sourceApplication)!
+            print("parsedUrl", parsedUrl)
+            if (parsedUrl.appLinkData == nil){
+                var targetUrl: NSURL = parsedUrl.targetURL
+                print("targetUrl", targetUrl)
+            }
+        
             handleSession();
             return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
             

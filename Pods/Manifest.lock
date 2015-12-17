@@ -4,9 +4,17 @@ PODS:
   - AWSCore (2.3.0)
   - AWSS3 (2.3.0):
     - AWSCore (= 2.3.0)
+  - Bolts (1.5.0):
+    - Bolts/AppLinks (= 1.5.0)
+    - Bolts/Tasks (= 1.5.0)
+  - Bolts/AppLinks (1.5.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.5.0)
   - Mixpanel (2.9.1):
     - Mixpanel/Mixpanel (= 2.9.1)
   - Mixpanel/Mixpanel (2.9.1)
+  - Parse (1.11.0):
+    - Bolts/Tasks (~> 1.5)
   - Realm (0.96.2):
     - Realm/Headers (= 0.96.2)
   - Realm/Headers (0.96.2)
@@ -22,7 +30,9 @@ DEPENDENCIES:
   - ARNTransitionAnimator
   - AWSCore
   - AWSS3
+  - Bolts
   - Mixpanel
+  - Parse
   - Realm (from `https://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
   - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
   - SDWebImage (~> 3.7)
@@ -49,7 +59,9 @@ SPEC CHECKSUMS:
   ARNTransitionAnimator: 6cfb309cec88ce7389ce009447225ae8e4e40f46
   AWSCore: dc200c885c9799f9f5d3ab9ec38a9c4b44d680f9
   AWSS3: 0185482a8136da9c7542a767567ee18106b38bca
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
   Mixpanel: 5ca24b2a05f4c77fe9bcfe7671d681d0f3f8d76f
+  Parse: 886af46a0a677402f6374bb97ac212e795f70afe
   Realm: 962a3daeb000dfd379e0a9ccb2a752a352a88205
   RealmSwift: 485599fe54e35461c4a0daa7d01d8fbf11424873
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84

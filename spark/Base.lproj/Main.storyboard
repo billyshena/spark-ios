@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WgZ-5D-2Lk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZFt-wr-yIb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -355,9 +355,6 @@
                                     <constraint firstAttribute="width" constant="200" id="992-t3-I7z"/>
                                     <constraint firstAttribute="height" constant="48" id="xhj-dv-XbH"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="j1g-5M-Wbh" appends="YES" id="XQc-ds-Em2"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNo-Ld-S34">
                                 <rect key="frame" x="20" y="299" width="560" height="138"/>
@@ -413,14 +410,10 @@
                         <outlet property="owner" destination="UaE-Vk-Ly0" id="HlC-Z4-aCO"/>
                         <outlet property="separator" destination="zPz-ft-PU5" id="L2b-UM-GWC"/>
                         <outlet property="singleImage" destination="HZh-wZ-dS6" id="5ff-3d-zNF"/>
+                        <outlet property="startDeck" destination="e9B-rl-pH5" id="EAp-zb-Uqt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zx5-tY-WOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="j1g-5M-Wbh">
-                    <connections>
-                        <segue destination="7qS-CC-v4h" kind="presentation" id="Fgp-6V-Y8m"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1852" y="1024"/>
         </scene>
@@ -461,7 +454,7 @@
                                                     <rect key="frame" x="73" y="0.0" width="455" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="usericon" id="23Y-wR-VPw">

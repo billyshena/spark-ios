@@ -13,6 +13,8 @@ pod 'SDWebImage', '~> 3.7'
 pod 'ARNTransitionAnimator'
 pod 'AWSCore'
 pod 'AWSS3'
+pod 'Bolts'
+pod 'Parse'
 end
 
 target 'sparkTests' do

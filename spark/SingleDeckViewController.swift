@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
+import FBSDKShareKit
 
 class SingleDeckViewController: UIViewController {
+    
+    @IBOutlet weak var startDeck: UIImageView!
     
     @IBOutlet weak var owner: UILabel!
 
@@ -55,20 +60,25 @@ class SingleDeckViewController: UIViewController {
         
     
         // Add event listener on start deck cta
-//        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
-//        startDeck.userInteractionEnabled = true
-//        startDeck.addGestureRecognizer(tapGestureRecognizer)
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        startDeck.userInteractionEnabled = true
+        startDeck.addGestureRecognizer(tapGestureRecognizer)
     
         
     }
     
     
-//    func imageTapped(img: AnyObject) {
-//        
-//        print("Image is clicked here")
-//        
-//    }
-//    
+    func imageTapped(img: AnyObject) {
+        
+        print("Image is clicked here")
+        
+        let content: FBSDKAppInviteContent = FBSDKAppInviteContent()
+        content.appLinkURL = NSURL(string: "https://fb.me/1660970860825120")!
+        content.appInvitePreviewImageURL = NSURL(string: "https://www.mydomain.com/image.jpg")!
+        FBSDKAppInviteDialog.showFromViewController(self, withContent: content, delegate: nil)
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
