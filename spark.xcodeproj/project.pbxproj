@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D27926E1BCAE7EA008588BD /* CompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27926C1BCAE7EA008588BD /* CompletedViewController.swift */; };
-		8D27926F1BCAE7EA008588BD /* CompletedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D27926D1BCAE7EA008588BD /* CompletedViewController.xib */; };
-		8D2792721BCAE836008588BD /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2792701BCAE836008588BD /* DeckViewController.swift */; };
-		8D2792731BCAE836008588BD /* DeckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2792711BCAE836008588BD /* DeckViewController.xib */; };
-		8D2792761BCAE846008588BD /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2792741BCAE846008588BD /* ProgressViewController.swift */; };
-		8D2792771BCAE846008588BD /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2792751BCAE846008588BD /* ProgressViewController.xib */; };
 		8D28E7D61C0F3A81009321E9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */; };
 		8D28E9931C0F3AA6009321E9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */; };
 		8D28E9CF1C0F4568009321E9 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */; };
@@ -22,7 +16,7 @@
 		8D28E9E81C0F7D5A009321E9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9E71C0F7D5A009321E9 /* AppError.swift */; };
 		8D28E9EA1C0F7D82009321E9 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9E91C0F7D82009321E9 /* Session.swift */; };
 		8D28E9EC1C0F7DFE009321E9 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9EB1C0F7DFE009321E9 /* FBManager.swift */; };
-		8D28E9F11C108788009321E9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9F01C108788009321E9 /* TestViewController.swift */; };
+		8D28E9F11C108788009321E9 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9F01C108788009321E9 /* DeckViewController.swift */; };
 		8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */; };
 		8D3214331BC3D96D008FF0B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */; };
 		8D3214361BC3D96D008FF0B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3214341BC3D96D008FF0B8 /* Main.storyboard */; };
@@ -31,6 +25,10 @@
 		8D3214461BC3D96D008FF0B8 /* sparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214451BC3D96D008FF0B8 /* sparkTests.swift */; };
 		8D3214511BC3D96E008FF0B8 /* sparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214501BC3D96E008FF0B8 /* sparkUITests.swift */; };
 		8D3214A91BC4493E008FF0B8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214A81BC4493E008FF0B8 /* SWRevealViewController.m */; };
+		8D6637AC1C1E4970001D6CF8 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6637AB1C1E4970001D6CF8 /* ProgressViewController.swift */; };
+		8D6637AE1C1E49EA001D6CF8 /* CompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6637AD1C1E49EA001D6CF8 /* CompletedViewController.swift */; };
+		8D8A70B81C217C1900DDBEA0 /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */; };
+		8D8A70BC1C22102600DDBEA0 /* Invite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A70BB1C22102600DDBEA0 /* Invite.swift */; };
 		8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */; };
 		8DD70A921C109DE700596846 /* AsideNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD70A911C109DE700596846 /* AsideNavController.swift */; };
 		8DE53ECB1C178D1A00B5C18B /* SingleDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */; };
@@ -59,12 +57,6 @@
 		4BD177973E737A4C7D2A9FA4 /* Pods-spark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spark.release.xcconfig"; path = "Pods/Target Support Files/Pods-spark/Pods-spark.release.xcconfig"; sourceTree = "<group>"; };
 		78C709E35687AB86854DBE2E /* Pods_spark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		853765AF349A2B3E50F1A22F /* Pods-spark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spark/Pods-spark.debug.xcconfig"; sourceTree = "<group>"; };
-		8D27926C1BCAE7EA008588BD /* CompletedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewController.swift; sourceTree = "<group>"; };
-		8D27926D1BCAE7EA008588BD /* CompletedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompletedViewController.xib; sourceTree = "<group>"; };
-		8D2792701BCAE836008588BD /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
-		8D2792711BCAE836008588BD /* DeckViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeckViewController.xib; sourceTree = "<group>"; };
-		8D2792741BCAE846008588BD /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
-		8D2792751BCAE846008588BD /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 		8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -74,7 +66,7 @@
 		8D28E9E71C0F7D5A009321E9 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		8D28E9E91C0F7D82009321E9 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		8D28E9EB1C0F7DFE009321E9 /* FBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
-		8D28E9F01C108788009321E9 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		8D28E9F01C108788009321E9 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
 		8D32142D1BC3D96D008FF0B8 /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +83,10 @@
 		8D3214A61BC4493D008FF0B8 /* spark-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spark-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D3214A71BC4493E008FF0B8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8D3214A81BC4493E008FF0B8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8D6637AB1C1E4970001D6CF8 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		8D6637AD1C1E49EA001D6CF8 /* CompletedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewController.swift; sourceTree = "<group>"; };
+		8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+		8D8A70BB1C22102600DDBEA0 /* Invite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invite.swift; sourceTree = "<group>"; };
 		8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8DD70A911C109DE700596846 /* AsideNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsideNavController.swift; sourceTree = "<group>"; };
 		8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDeckViewController.swift; sourceTree = "<group>"; };
@@ -150,17 +146,14 @@
 			children = (
 				8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */,
 				8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */,
-				8D27926C1BCAE7EA008588BD /* CompletedViewController.swift */,
-				8D27926D1BCAE7EA008588BD /* CompletedViewController.xib */,
-				8D2792701BCAE836008588BD /* DeckViewController.swift */,
-				8D2792711BCAE836008588BD /* DeckViewController.xib */,
-				8D2792741BCAE846008588BD /* ProgressViewController.swift */,
-				8D2792751BCAE846008588BD /* ProgressViewController.xib */,
 				8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */,
-				8D28E9F01C108788009321E9 /* TestViewController.swift */,
+				8D28E9F01C108788009321E9 /* DeckViewController.swift */,
 				8DD70A911C109DE700596846 /* AsideNavController.swift */,
 				8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */,
 				8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */,
+				8D6637AB1C1E4970001D6CF8 /* ProgressViewController.swift */,
+				8D6637AD1C1E49EA001D6CF8 /* CompletedViewController.swift */,
+				8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +164,7 @@
 				8D28E9E11C0F7C39009321E9 /* User.swift */,
 				8D28E9E91C0F7D82009321E9 /* Session.swift */,
 				8D28E9EB1C0F7DFE009321E9 /* FBManager.swift */,
+				8D8A70BB1C22102600DDBEA0 /* Invite.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -383,12 +377,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D27926F1BCAE7EA008588BD /* CompletedViewController.xib in Resources */,
-				8D2792731BCAE836008588BD /* DeckViewController.xib in Resources */,
 				8D32143B1BC3D96D008FF0B8 /* LaunchScreen.storyboard in Resources */,
 				8D3214381BC3D96D008FF0B8 /* Assets.xcassets in Resources */,
 				8D3214361BC3D96D008FF0B8 /* Main.storyboard in Resources */,
-				8D2792771BCAE846008588BD /* ProgressViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,21 +452,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6637AC1C1E4970001D6CF8 /* ProgressViewController.swift in Sources */,
+				8D8A70B81C217C1900DDBEA0 /* InviteViewController.swift in Sources */,
 				8DD70A921C109DE700596846 /* AsideNavController.swift in Sources */,
-				8D28E9F11C108788009321E9 /* TestViewController.swift in Sources */,
+				8D28E9F11C108788009321E9 /* DeckViewController.swift in Sources */,
 				8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */,
-				8D27926E1BCAE7EA008588BD /* CompletedViewController.swift in Sources */,
+				8D6637AE1C1E49EA001D6CF8 /* CompletedViewController.swift in Sources */,
 				8D28E9E51C0F7CF2009321E9 /* Router.swift in Sources */,
 				8D3214331BC3D96D008FF0B8 /* HomeViewController.swift in Sources */,
 				8D28E9EC1C0F7DFE009321E9 /* FBManager.swift in Sources */,
 				8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */,
-				8D2792761BCAE846008588BD /* ProgressViewController.swift in Sources */,
 				8D28E9E21C0F7C39009321E9 /* User.swift in Sources */,
 				8D3214A91BC4493E008FF0B8 /* SWRevealViewController.m in Sources */,
 				8DE53ECB1C178D1A00B5C18B /* SingleDeckViewController.swift in Sources */,
 				8D28E9EA1C0F7D82009321E9 /* Session.swift in Sources */,
+				8D8A70BC1C22102600DDBEA0 /* Invite.swift in Sources */,
 				8D28E9E81C0F7D5A009321E9 /* AppError.swift in Sources */,
-				8D2792721BCAE836008588BD /* DeckViewController.swift in Sources */,
 				8D28E9E01C0F790C009321E9 /* Constants.swift in Sources */,
 				8DFBCDEC1C1488DE00921959 /* DeckViewCell.swift in Sources */,
 			);

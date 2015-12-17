@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     
         fbLogin.layer.cornerRadius = 5
+   
         if (FBSDKAccessToken.currentAccessToken() == nil)
         {
             print("Not logged in..")

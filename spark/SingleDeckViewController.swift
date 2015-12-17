@@ -17,6 +17,8 @@ class SingleDeckViewController: UIViewController {
     @IBOutlet weak var singleImage: UIImageView!
     @IBOutlet weak var separator: UIView!
     
+
+    
     var image = UIImage()
     var text = ""
     var likeTxt = ""
@@ -42,10 +44,8 @@ class SingleDeckViewController: UIViewController {
         navigationController?.navigationBar.translucent = true
         navigationController?.view.backgroundColor = UIColor.clearColor()
         
-
-//        
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: self.view, style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
-        
+    
+        // Custom back navigation button
         let btn = UIButton()
         btn.setImage(UIImage(named: "back"), forState: .Normal)
         btn.frame = CGRectMake(0, 0, 12, 20)
@@ -53,11 +53,22 @@ class SingleDeckViewController: UIViewController {
         let button = UIBarButtonItem(customView: btn)
         self.navigationItem.leftBarButtonItem = button
         
+    
+        // Add event listener on start deck cta
+//        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+//        startDeck.userInteractionEnabled = true
+//        startDeck.addGestureRecognizer(tapGestureRecognizer)
+    
         
-
-
-
     }
+    
+    
+//    func imageTapped(img: AnyObject) {
+//        
+//        print("Image is clicked here")
+//        
+//    }
+//    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -2,34 +2,29 @@
 //  CompletedViewController.swift
 //  spark
 //
-//  Created by Billy Shen on 11/10/2015.
+//  Created by Billy Shen on 14/12/2015.
 //  Copyright © 2015 Billy Shen. All rights reserved.
 //
 
 import UIKit
 
-class CompletedViewController: UINavigationController {
+class CompletedViewController: UIViewController {
+
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        
         print("CompletedViewController")
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        super.viewDidLoad()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Third VC will appear")
     }
-    */
-
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("Third VC will disappear")
+    }
+    
 }
