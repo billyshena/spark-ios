@@ -24,6 +24,8 @@ class ProgressViewController: UIViewController, UICollectionViewDelegate, UIColl
         UIImage(named: "nature")
     ]
     let names = [ "Music", "Sports", "Travel", "Culture", "Food", "History", "Sex", "Nature"]
+    let angles = [20, 130, 45, 90, 280, 175, 88, 143]
+    let answers = ["2", "28", "8", "15", "58", "32", "17", "30"]
     
     override func viewDidLoad() {
         
@@ -61,6 +63,8 @@ class ProgressViewController: UIViewController, UICollectionViewDelegate, UIColl
         cell.imageView?.image =  self.decks[indexPath.row]
         cell.deckName?.text = self.names[indexPath.row]
         cell.deckName?.font = UIFont(name: "Helvetica Neue", size: 24)
+        cell.progressCircle?.angle = self.angles[indexPath.row]
+        cell.answers?.text = self.answers[indexPath.row]
         
         return cell
     }
