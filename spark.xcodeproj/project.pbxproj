@@ -30,9 +30,11 @@
 		8D8A70B81C217C1900DDBEA0 /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */; };
 		8D8A70BC1C22102600DDBEA0 /* Invite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A70BB1C22102600DDBEA0 /* Invite.swift */; };
 		8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */; };
+		8DD30FC31C30A3B700C5494F /* ProgressViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */; };
 		8DD70A921C109DE700596846 /* AsideNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD70A911C109DE700596846 /* AsideNavController.swift */; };
 		8DE53ECB1C178D1A00B5C18B /* SingleDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */; };
 		8DFBCDEC1C1488DE00921959 /* DeckViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */; };
+		8DFE2E0A1C2764CD00E48217 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE2E091C2764CD00E48217 /* KDCircularProgress.swift */; };
 		B3905FBD73441F5B9E816073 /* Pods_spark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C709E35687AB86854DBE2E /* Pods_spark.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,9 +91,11 @@
 		8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
 		8D8A70BB1C22102600DDBEA0 /* Invite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invite.swift; sourceTree = "<group>"; };
 		8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewCell.swift; sourceTree = "<group>"; };
 		8DD70A911C109DE700596846 /* AsideNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsideNavController.swift; sourceTree = "<group>"; };
 		8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDeckViewController.swift; sourceTree = "<group>"; };
 		8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewCell.swift; sourceTree = "<group>"; };
+		8DFE2E091C2764CD00E48217 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = "../../../../Downloads/KDCircularProgress-master/KDCircularProgress/KDCircularProgress.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 		8D28E9DC1C0F6EB1009321E9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8DFE2E091C2764CD00E48217 /* KDCircularProgress.swift */,
 				8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */,
 				8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */,
 				8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */,
@@ -155,6 +160,7 @@
 				8D6637AB1C1E4970001D6CF8 /* ProgressViewController.swift */,
 				8D6637AD1C1E49EA001D6CF8 /* CompletedViewController.swift */,
 				8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */,
+				8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFE2E0A1C2764CD00E48217 /* KDCircularProgress.swift in Sources */,
 				8D6637AC1C1E4970001D6CF8 /* ProgressViewController.swift in Sources */,
 				8D8A70B81C217C1900DDBEA0 /* InviteViewController.swift in Sources */,
 				8DD70A921C109DE700596846 /* AsideNavController.swift in Sources */,
@@ -466,6 +473,7 @@
 				8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */,
 				8D28E9E21C0F7C39009321E9 /* User.swift in Sources */,
 				8D3214A91BC4493E008FF0B8 /* SWRevealViewController.m in Sources */,
+				8DD30FC31C30A3B700C5494F /* ProgressViewCell.swift in Sources */,
 				8DE53ECB1C178D1A00B5C18B /* SingleDeckViewController.swift in Sources */,
 				8D28E9EA1C0F7D82009321E9 /* Session.swift in Sources */,
 				8D8A70BC1C22102600DDBEA0 /* Invite.swift in Sources */,
