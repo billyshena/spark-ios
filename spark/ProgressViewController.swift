@@ -27,6 +27,7 @@ class ProgressViewController: UIViewController, UICollectionViewDelegate, UIColl
     let angles = [20, 130, 45, 90, 280, 175, 88, 143]
     let answers = ["2", "28", "8", "15", "58", "32", "17", "30"]
     
+    
     override func viewDidLoad() {
         
         print("ProgressViewController")

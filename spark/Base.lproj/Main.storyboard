@@ -193,25 +193,47 @@
                                                     <color key="textColor" red="0.99991267919540405" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtq-yg-4Zv">
+                                                    <rect key="frame" x="56" y="82" width="57" height="15"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Greg,Sara and 3 more">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99991267919540405" green="1" blue="0.99988144636154175" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="BEi-4X-36c" secondAttribute="bottom" id="2ze-Ys-gj5"/>
+                                            <constraint firstItem="qtq-yg-4Zv" firstAttribute="top" secondItem="el3-dP-eJx" secondAttribute="topMargin" constant="57" id="43A-0E-T8A"/>
                                             <constraint firstItem="pZI-Bm-xht" firstAttribute="centerX" secondItem="el3-dP-eJx" secondAttribute="centerX" id="7j7-RG-cS2"/>
                                             <constraint firstItem="BEi-4X-36c" firstAttribute="top" secondItem="el3-dP-eJx" secondAttribute="top" id="83S-zn-YmC"/>
                                             <constraint firstItem="jyt-Ng-6a7" firstAttribute="trailing" secondItem="el3-dP-eJx" secondAttribute="trailingMargin" id="BHc-El-rI2"/>
                                             <constraint firstItem="pZI-Bm-xht" firstAttribute="centerY" secondItem="el3-dP-eJx" secondAttribute="centerY" constant="-10" id="BXZ-uE-9Dq"/>
+                                            <constraint firstItem="qtq-yg-4Zv" firstAttribute="top" secondItem="pZI-Bm-xht" secondAttribute="bottom" constant="30" id="F4J-KR-orW"/>
                                             <constraint firstAttribute="topMargin" secondItem="jyt-Ng-6a7" secondAttribute="top" constant="5" id="JSe-t7-WTq"/>
                                             <constraint firstItem="jyt-Ng-6a7" firstAttribute="leading" secondItem="el3-dP-eJx" secondAttribute="leading" constant="109" id="Uf6-0K-lGI"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="jyt-Ng-6a7" secondAttribute="trailing" constant="-7" id="fSD-3g-YPf"/>
+                                            <constraint firstItem="pZI-Bm-xht" firstAttribute="top" secondItem="qtq-yg-4Zv" secondAttribute="bottom" constant="8" symbolic="YES" id="hVL-Un-jEm"/>
+                                            <constraint firstItem="qtq-yg-4Zv" firstAttribute="centerY" secondItem="el3-dP-eJx" secondAttribute="centerY" constant="14" id="mn1-BR-Wia"/>
+                                            <constraint firstItem="qtq-yg-4Zv" firstAttribute="centerX" secondItem="el3-dP-eJx" secondAttribute="centerX" id="nuR-Au-gKI"/>
                                             <constraint firstAttribute="trailing" secondItem="BEi-4X-36c" secondAttribute="trailing" id="oEI-j8-aaT"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="jyt-Ng-6a7" secondAttribute="bottom" constant="93" id="s27-Ua-OMZ"/>
+                                            <constraint firstItem="qtq-yg-4Zv" firstAttribute="top" secondItem="pZI-Bm-xht" secondAttribute="top" constant="30" id="uZp-zD-O9l"/>
                                             <constraint firstItem="jyt-Ng-6a7" firstAttribute="top" secondItem="el3-dP-eJx" secondAttribute="topMargin" constant="10" id="wkK-dX-aKS"/>
                                             <constraint firstItem="BEi-4X-36c" firstAttribute="leading" secondItem="el3-dP-eJx" secondAttribute="leading" id="zWu-aq-eqt"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
+                                                <exclude reference="hVL-Un-jEm"/>
+                                                <exclude reference="43A-0E-T8A"/>
+                                                <exclude reference="F4J-KR-orW"/>
+                                                <exclude reference="uZp-zD-O9l"/>
                                                 <exclude reference="BHc-El-rI2"/>
                                                 <exclude reference="Uf6-0K-lGI"/>
                                                 <exclude reference="s27-Ua-OMZ"/>
@@ -221,6 +243,7 @@
                                         <connections>
                                             <outlet property="answers" destination="Ciy-RK-hzi" id="gDv-Al-Kdj"/>
                                             <outlet property="deckName" destination="pZI-Bm-xht" id="f8A-Xy-c08"/>
+                                            <outlet property="friends" destination="qtq-yg-4Zv" id="BBS-Vk-M0o"/>
                                             <outlet property="imageView" destination="BEi-4X-36c" id="buE-3u-cej"/>
                                             <outlet property="progressCircle" destination="jyt-Ng-6a7" id="R80-tw-KU8"/>
                                         </connections>
@@ -246,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTP-fU-Sr0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="2175"/>
+            <point key="canvasLocation" x="-54" y="2153"/>
         </scene>
         <!--Completed View Controller-->
         <scene sceneID="aZa-s8-W9u">

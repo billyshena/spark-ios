@@ -10,6 +10,7 @@ import UIKit
 
 class ProgressViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var friends: UILabel!
     @IBOutlet weak var answers: UILabel!
 
     @IBOutlet weak var progressCircle: KDCircularProgress!
