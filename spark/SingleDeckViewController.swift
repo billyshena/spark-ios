@@ -11,7 +11,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import FBSDKShareKit
 
-class SingleDeckViewController: UIViewController {
+class SingleDeckViewController: UIViewController, FBSDKGameRequestDialogDelegate {
     
     @IBOutlet weak var startDeck: UIImageView!
     
@@ -29,6 +29,18 @@ class SingleDeckViewController: UIViewController {
     var likeTxt = ""
     var ownerTxt = ""
     
+    
+    func gameRequestDialog(gameRequestDialog: FBSDKGameRequestDialog!, didCompleteWithResults results: [NSObject : AnyObject]!) {
+        print("didCompleteWithResults")
+    }
+    
+    func gameRequestDialog(gameRequestDialog: FBSDKGameRequestDialog!, didFailWithError error: NSError!) {
+        print("didFailWithError")
+    }
+    
+    func gameRequestDialogDidCancel(gameRequestDialog: FBSDKGameRequestDialog!) {
+        print("didCancel")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,10 +84,16 @@ class SingleDeckViewController: UIViewController {
         
         print("Image is clicked here")
         
-        let content: FBSDKAppInviteContent = FBSDKAppInviteContent()
-        content.appLinkURL = NSURL(string: "https://fb.me/1660970860825120")!
-        content.appInvitePreviewImageURL = NSURL(string: "https://www.mydomain.com/image.jpg")!
-        FBSDKAppInviteDialog.showFromViewController(self, withContent: content, delegate: nil)
+//        Facebook invite to install the App
+//        let content: FBSDKAppInviteContent = FBSDKAppInviteContent()
+//        content.appLinkURL = NSURL(string: "https://fb.me/1660970860825120")!
+//        content.appInvitePreviewImageURL = NSURL(string: "https://www.mydomain.com/image.jpg")!
+//        FBSDKAppInviteDialog.showFromViewController(self, withContent: content, delegate: nil)
+        
+        let gameRequestContent: FBSDKGameRequestContent = FBSDKGameRequestContent()
+        gameRequestContent.message = "I just started a deck on Spark !"
+        gameRequestContent.title = "Play with your friends"
+        FBSDKGameRequestDialog.showWithContent(gameRequestContent, delegate: self)
         
     }
     
