@@ -32,6 +32,8 @@ class SingleDeckViewController: UIViewController, FBSDKGameRequestDialogDelegate
     
     func gameRequestDialog(gameRequestDialog: FBSDKGameRequestDialog!, didCompleteWithResults results: [NSObject : AnyObject]!) {
         print("didCompleteWithResults")
+        
+        // TODO: START THE DECK WITH 1ST QUESTION
     }
     
     func gameRequestDialog(gameRequestDialog: FBSDKGameRequestDialog!, didFailWithError error: NSError!) {
