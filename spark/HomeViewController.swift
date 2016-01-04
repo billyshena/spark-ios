@@ -10,18 +10,17 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-class HomeViewController: UIViewController {
-    
-    
+let notificationKey = "switchPage"
 
-
+class HomeViewController: UIViewController{
+    
     @IBOutlet weak var Open: UIBarButtonItem!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
 
     @IBOutlet weak var contentView: UIView!
-    var currentViewController: UIViewController?
     
+    var currentViewController: UIViewController?
     
     lazy var deckVC: UIViewController? = {
         let deckVC = self.storyboard?.instantiateViewControllerWithIdentifier("DeckViewController")
@@ -37,6 +36,8 @@ class HomeViewController: UIViewController {
         return completedVC
     }()
 
+    
+    var pageVC: UIPageViewController!
     
     override func viewDidLoad() {
         
@@ -57,6 +58,7 @@ class HomeViewController: UIViewController {
         Open.target = self.revealViewController()
         Open.action = Selector("revealToggle:")
 
+        pageVC = self.storyboard?.instantiateViewControllerWithIdentifier("MyPageViewController") as! MyPageViewController
         
         // Set gesture swipe to open sidebar menu on left
         view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -68,15 +70,16 @@ class HomeViewController: UIViewController {
         // Create logo UIImage object and set it as the navigation main title
         let image = UIImage(named: "logo.png")
         navigationItem.titleView = UIImageView(image: image)
-    
+
 //        
         segmentedControl.selectedSegmentIndex = 0
-        displayCurrentTab(0)
-      
+//        displayCurrentTab(0)
+//      
 
         
     }
     
+
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         if let currentViewController = currentViewController {
@@ -94,6 +97,7 @@ class HomeViewController: UIViewController {
         print("displayCurrentTab")
         if let vc = viewControllerForSelectedSegmentIndex(tabIndex) {
 
+            print("page")
             self.addChildViewController(vc)
             vc.didMoveToParentViewController(self)
 
@@ -123,10 +127,21 @@ class HomeViewController: UIViewController {
     
     @IBAction func indexChanged(sender: UISegmentedControl) {
         
-        self.currentViewController!.view.removeFromSuperview()
-        self.currentViewController!.removeFromParentViewController()
+        print("indexChanged", sender.selectedSegmentIndex)
+       
+       
         
-        displayCurrentTab(sender.selectedSegmentIndex)
+        NSNotificationCenter.defaultCenter().postNotificationName("switchPage", object: self, userInfo: ["pageNumber": sender.selectedSegmentIndex])
+        
+        print("sending notification")
+
+        
+//        contentView.addSubview((progressVC?.view)!)
+//        self.addChildViewController(progressVC!)
+//        self.currentViewController!.view.removeFromSuperview()
+//        self.currentViewController!.removeFromParentViewController()
+//        
+//        displayCurrentTab(sender.selectedSegmentIndex)
     }
     
     
