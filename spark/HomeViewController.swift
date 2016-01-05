@@ -71,14 +71,13 @@ class HomeViewController: UIViewController{
         let image = UIImage(named: "logo.png")
         navigationItem.titleView = UIImageView(image: image)
 
-//        
         segmentedControl.selectedSegmentIndex = 0
-//        displayCurrentTab(0)
-//      
 
         
     }
     
+    
+
 
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)

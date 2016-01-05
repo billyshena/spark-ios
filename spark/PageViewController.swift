@@ -44,7 +44,7 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
             if let s = info["pageNumber"] {
                 
                 let page = pages[s]
-                setViewControllers([page], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+                setViewControllers([page], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
                 
             }
             else {
@@ -68,7 +68,10 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         let currentIndex = pages.indexOf(viewController)!
         let nextIndex = abs((currentIndex + 1) % pages.count)
-        return pages[nextIndex]
+        if nextIndex < pages.count && (currentIndex != pages.count - 1){
+            return pages[nextIndex]
+        }
+        return nil
     }
     
     
