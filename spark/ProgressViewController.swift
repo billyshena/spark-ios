@@ -35,15 +35,15 @@ class ProgressViewController: UIViewController, UICollectionViewDelegate, UIColl
         progressView.backgroundColor = Constants.Colors.bgLightGrey
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        print("Second VC will appear")
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("Second VC will disappear")
-    }
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        print("Second VC will appear")
+//    }
+//    
+//    override func viewWillDisappear(animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        print("Second VC will disappear")
+//    }
     
     // Returns the number of elements
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -76,12 +76,13 @@ class ProgressViewController: UIViewController, UICollectionViewDelegate, UIColl
     {
         return CGSize(width: (collectionView.frame.size.width - 38)/2, height: collectionView.frame.size.height/3)
     }
+
     
     
     // Listener when a cell is selected
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        print("cell is clicked", indexPath.row)
+        self.performSegueWithIdentifier("showProgress", sender: self)
 
         
     }

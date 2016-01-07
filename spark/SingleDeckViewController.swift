@@ -48,6 +48,7 @@ class SingleDeckViewController: UIViewController, FBSDKGameRequestDialogDelegate
         super.viewDidLoad()
 
         self.singleImage.image = self.image
+
         self.deckName.text = text
         
         self.like.alpha = 0.7

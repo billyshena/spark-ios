@@ -32,17 +32,17 @@ class CompletedViewController: UIViewController, UICollectionViewDelegate, UICol
         completedView.backgroundColor = Constants.Colors.bgLightGrey
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        print("Third VC will appear")
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("Third VC will disappear")
-    }
-    
-    
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        print("Third VC will appear")
+//    }
+//    
+//    override func viewWillDisappear(animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        print("Third VC will disappear")
+//    }
+//    
+//    
     // Returns the number of elements
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.decks.count

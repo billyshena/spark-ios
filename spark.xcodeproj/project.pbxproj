@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1EF94A1C3C7EDD003D1B31 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EF9491C3C7EDD003D1B31 /* ImageTableViewController.swift */; };
 		8D28E7D61C0F3A81009321E9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */; };
 		8D28E9931C0F3AA6009321E9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */; };
 		8D28E9CF1C0F4568009321E9 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */; };
@@ -17,6 +18,9 @@
 		8D28E9EA1C0F7D82009321E9 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9E91C0F7D82009321E9 /* Session.swift */; };
 		8D28E9EC1C0F7DFE009321E9 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9EB1C0F7DFE009321E9 /* FBManager.swift */; };
 		8D28E9F11C108788009321E9 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28E9F01C108788009321E9 /* DeckViewController.swift */; };
+		8D2FF90D1C3D770000E75D4A /* ProgressCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2FF90C1C3D770000E75D4A /* ProgressCollectionViewController.swift */; };
+		8D2FF9111C3D79A400E75D4A /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2FF9101C3D79A400E75D4A /* HeaderCollectionReusableView.swift */; };
+		8D2FF9131C3D7ADD00E75D4A /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2FF9121C3D7ADD00E75D4A /* StickyHeader.swift */; };
 		8D3067561C39E55500EDCE11 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3067551C39E55500EDCE11 /* PageViewController.swift */; };
 		8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */; };
 		8D3214331BC3D96D008FF0B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */; };
@@ -62,6 +66,7 @@
 		4BD177973E737A4C7D2A9FA4 /* Pods-spark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spark.release.xcconfig"; path = "Pods/Target Support Files/Pods-spark/Pods-spark.release.xcconfig"; sourceTree = "<group>"; };
 		78C709E35687AB86854DBE2E /* Pods_spark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		853765AF349A2B3E50F1A22F /* Pods-spark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spark/Pods-spark.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1EF9491C3C7EDD003D1B31 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
 		8D28E7D51C0F3A81009321E9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		8D28E9921C0F3AA6009321E9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		8D28E9CE1C0F4568009321E9 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -72,6 +77,9 @@
 		8D28E9E91C0F7D82009321E9 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		8D28E9EB1C0F7DFE009321E9 /* FBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		8D28E9F01C108788009321E9 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
+		8D2FF90C1C3D770000E75D4A /* ProgressCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressCollectionViewController.swift; sourceTree = "<group>"; };
+		8D2FF9101C3D79A400E75D4A /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		8D2FF9121C3D7ADD00E75D4A /* StickyHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
 		8D3067551C39E55500EDCE11 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		8D32142D1BC3D96D008FF0B8 /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +178,9 @@
 				8DDF8BCA1C342D5B007F950D /* PointViewController.swift */,
 				8D7E631F1C383C4B000A2B9E /* PointViewCell.swift */,
 				8D3067551C39E55500EDCE11 /* PageViewController.swift */,
+				8D1EF9491C3C7EDD003D1B31 /* ImageTableViewController.swift */,
+				8D2FF90C1C3D770000E75D4A /* ProgressCollectionViewController.swift */,
+				8D2FF9101C3D79A400E75D4A /* HeaderCollectionReusableView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +220,14 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		8D2FF90E1C3D793900E75D4A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8D2FF9121C3D7ADD00E75D4A /* StickyHeader.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		8D3214241BC3D96D008FF0B8 = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +253,7 @@
 		8D32142F1BC3D96D008FF0B8 /* spark */ = {
 			isa = PBXGroup;
 			children = (
+				8D2FF90E1C3D793900E75D4A /* Helper */,
 				8D28E9E61C0F7D49009321E9 /* Utils */,
 				8D28E9E31C0F7CC8009321E9 /* Services */,
 				8D28E9DE1C0F78F5009321E9 /* Defines */,
@@ -478,6 +498,7 @@
 				8D3067561C39E55500EDCE11 /* PageViewController.swift in Sources */,
 				8D6637AE1C1E49EA001D6CF8 /* CompletedViewController.swift in Sources */,
 				8D28E9E51C0F7CF2009321E9 /* Router.swift in Sources */,
+				8D2FF9131C3D7ADD00E75D4A /* StickyHeader.swift in Sources */,
 				8D3214331BC3D96D008FF0B8 /* HomeViewController.swift in Sources */,
 				8D7E63201C383C4B000A2B9E /* PointViewCell.swift in Sources */,
 				8D28E9EC1C0F7DFE009321E9 /* FBManager.swift in Sources */,
@@ -485,9 +506,12 @@
 				8D28E9E21C0F7C39009321E9 /* User.swift in Sources */,
 				8DDF8BCB1C342D5B007F950D /* PointViewController.swift in Sources */,
 				8D3214A91BC4493E008FF0B8 /* SWRevealViewController.m in Sources */,
+				8D2FF90D1C3D770000E75D4A /* ProgressCollectionViewController.swift in Sources */,
 				8DD30FC31C30A3B700C5494F /* ProgressViewCell.swift in Sources */,
+				8D2FF9111C3D79A400E75D4A /* HeaderCollectionReusableView.swift in Sources */,
 				8DE53ECB1C178D1A00B5C18B /* SingleDeckViewController.swift in Sources */,
 				8D28E9EA1C0F7D82009321E9 /* Session.swift in Sources */,
+				8D1EF94A1C3C7EDD003D1B31 /* ImageTableViewController.swift in Sources */,
 				8D8A70BC1C22102600DDBEA0 /* Invite.swift in Sources */,
 				8D28E9E81C0F7D5A009321E9 /* AppError.swift in Sources */,
 				8D28E9E01C0F790C009321E9 /* Constants.swift in Sources */,

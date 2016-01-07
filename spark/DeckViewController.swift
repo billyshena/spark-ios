@@ -9,7 +9,7 @@
 import UIKit
 
 
-class DeckViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
+class DeckViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UIGestureRecognizerDelegate{
 
 
 
@@ -43,6 +43,17 @@ class DeckViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // Show the first view and hide the other ones
         deckView.backgroundColor = Constants.Colors.bgLightGrey
+        
+        
+        print("DeckViewController")
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        super.viewWillAppear(true)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self;
+        self.navigationController?.interactivePopGestureRecognizer?.enabled = true
         
         
     }

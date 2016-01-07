@@ -72,11 +72,28 @@ class HomeViewController: UIViewController{
         navigationItem.titleView = UIImageView(image: image)
 
         segmentedControl.selectedSegmentIndex = 0
-
+        
+        // Listen to swipe gesture in PageViewController
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "setControl:", name: "switchControl", object: nil)
         
     }
     
-    
+    func setControl(notification: NSNotification) {
+
+        // First try to cast user info to expected type
+        if let info = notification.userInfo as? Dictionary<String, Int> {
+            // Check if value present before using it
+            if let s = info["pageNumber"] {
+                segmentedControl.selectedSegmentIndex = s
+            }
+            else {
+                print("no value for key\n")
+            }
+        }
+        else {
+            print("wrong userInfo type")
+        }
+    }
 
 
     override func viewWillDisappear(animated: Bool) {

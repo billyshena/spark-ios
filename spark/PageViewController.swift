@@ -36,8 +36,6 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
     
     
     func setPage(notification: NSNotification) {
-        print("notification", notification)
-        print("name", notification.userInfo!["index"])
         // First try to cast user info to expected type
         if let info = notification.userInfo as? Dictionary<String, Int> {
             // Check if value present before using it
@@ -56,24 +54,39 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
         }
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        let currentIndex = pages.indexOf(viewController)!
-        if currentIndex > 0 {
-            return pages[currentIndex - 1]
-        }
+    
 
-        return nil
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        
+        let currentIndex = pages.indexOf(viewController)!
+        NSNotificationCenter.defaultCenter().postNotificationName("switchControl", object: self, userInfo: ["pageNumber": currentIndex])
+
+        if currentIndex == 0 {
+            return nil
+        }
+        
+
+        return pages[currentIndex - 1]
     }
+    
+    
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        
         let currentIndex = pages.indexOf(viewController)!
         let nextIndex = abs((currentIndex + 1) % pages.count)
-        if nextIndex < pages.count && (currentIndex != pages.count - 1){
-            return pages[nextIndex]
+        NSNotificationCenter.defaultCenter().postNotificationName("switchControl", object: self, userInfo: ["pageNumber": currentIndex])
+
+        if currentIndex == pages.count - 1{
+            return nil
         }
-        return nil
+        
+        return pages[nextIndex]
+        
     }
     
+
     
     func displayPageForIndex(index: Int) {
         
