@@ -39,6 +39,7 @@
 		8DD30FC31C30A3B700C5494F /* ProgressViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */; };
 		8DD70A921C109DE700596846 /* AsideNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD70A911C109DE700596846 /* AsideNavController.swift */; };
 		8DDF8BCB1C342D5B007F950D /* PointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDF8BCA1C342D5B007F950D /* PointViewController.swift */; };
+		8DE026DD1C405700003DF303 /* SingleProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE026DC1C405700003DF303 /* SingleProgressViewController.swift */; };
 		8DE53ECB1C178D1A00B5C18B /* SingleDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */; };
 		8DFBCDEC1C1488DE00921959 /* DeckViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */; };
 		8DFE2E0A1C2764CD00E48217 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE2E091C2764CD00E48217 /* KDCircularProgress.swift */; };
@@ -109,6 +110,7 @@
 		8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewCell.swift; sourceTree = "<group>"; };
 		8DD70A911C109DE700596846 /* AsideNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsideNavController.swift; sourceTree = "<group>"; };
 		8DDF8BCA1C342D5B007F950D /* PointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointViewController.swift; sourceTree = "<group>"; };
+		8DE026DC1C405700003DF303 /* SingleProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleProgressViewController.swift; sourceTree = "<group>"; };
 		8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDeckViewController.swift; sourceTree = "<group>"; };
 		8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewCell.swift; sourceTree = "<group>"; };
 		8DFE2E091C2764CD00E48217 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = "../../../../Downloads/KDCircularProgress-master/KDCircularProgress/KDCircularProgress.swift"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				8D2FF9101C3D79A400E75D4A /* HeaderCollectionReusableView.swift */,
 				8DFFC0FE1C3FACE900825B47 /* SingleCompletedViewController.swift */,
 				8DFFC1001C3FCB1200825B47 /* CompletedViewCell.swift */,
+				8DE026DC1C405700003DF303 /* SingleProgressViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				8D28E9F11C108788009321E9 /* DeckViewController.swift in Sources */,
 				8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */,
 				8D3067561C39E55500EDCE11 /* PageViewController.swift in Sources */,
+				8DE026DD1C405700003DF303 /* SingleProgressViewController.swift in Sources */,
 				8D6637AE1C1E49EA001D6CF8 /* CompletedViewController.swift in Sources */,
 				8D28E9E51C0F7CF2009321E9 /* Router.swift in Sources */,
 				8D2FF9131C3D7ADD00E75D4A /* StickyHeader.swift in Sources */,

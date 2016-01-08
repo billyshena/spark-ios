@@ -10,7 +10,6 @@ import UIKit
 
 class CompletedViewCell: UITableViewCell {
 
-
     @IBOutlet weak var userImage: UIImageView!
 
 }

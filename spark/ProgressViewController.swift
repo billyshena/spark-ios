@@ -82,7 +82,7 @@ class ProgressViewController: UIViewController, UICollectionViewDelegate, UIColl
     // Listener when a cell is selected
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        self.performSegueWithIdentifier("showProgress", sender: self)
+        print("cell clicked")
 
         
     }
