@@ -58,12 +58,20 @@ class ProgressCollectionViewController: UIViewController, UICollectionViewDataSo
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 0
+    }
+    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width, height: 70)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellCollectionVIew", forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellCollectionView", forIndexPath: indexPath)
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.lightGrayColor().CGColor
+        
+        
         return cell
     }
     

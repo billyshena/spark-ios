@@ -42,6 +42,8 @@
 		8DE53ECB1C178D1A00B5C18B /* SingleDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */; };
 		8DFBCDEC1C1488DE00921959 /* DeckViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */; };
 		8DFE2E0A1C2764CD00E48217 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE2E091C2764CD00E48217 /* KDCircularProgress.swift */; };
+		8DFFC0FF1C3FACE900825B47 /* SingleCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFC0FE1C3FACE900825B47 /* SingleCompletedViewController.swift */; };
+		8DFFC1011C3FCB1200825B47 /* CompletedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFC1001C3FCB1200825B47 /* CompletedViewCell.swift */; };
 		B3905FBD73441F5B9E816073 /* Pods_spark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C709E35687AB86854DBE2E /* Pods_spark.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +112,8 @@
 		8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDeckViewController.swift; sourceTree = "<group>"; };
 		8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewCell.swift; sourceTree = "<group>"; };
 		8DFE2E091C2764CD00E48217 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = "../../../../Downloads/KDCircularProgress-master/KDCircularProgress/KDCircularProgress.swift"; sourceTree = "<group>"; };
+		8DFFC0FE1C3FACE900825B47 /* SingleCompletedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCompletedViewController.swift; sourceTree = "<group>"; };
+		8DFFC1001C3FCB1200825B47 /* CompletedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 				8D1EF9491C3C7EDD003D1B31 /* ImageTableViewController.swift */,
 				8D2FF90C1C3D770000E75D4A /* ProgressCollectionViewController.swift */,
 				8D2FF9101C3D79A400E75D4A /* HeaderCollectionReusableView.swift */,
+				8DFFC0FE1C3FACE900825B47 /* SingleCompletedViewController.swift */,
+				8DFFC1001C3FCB1200825B47 /* CompletedViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -510,9 +516,11 @@
 				8DD30FC31C30A3B700C5494F /* ProgressViewCell.swift in Sources */,
 				8D2FF9111C3D79A400E75D4A /* HeaderCollectionReusableView.swift in Sources */,
 				8DE53ECB1C178D1A00B5C18B /* SingleDeckViewController.swift in Sources */,
+				8DFFC1011C3FCB1200825B47 /* CompletedViewCell.swift in Sources */,
 				8D28E9EA1C0F7D82009321E9 /* Session.swift in Sources */,
 				8D1EF94A1C3C7EDD003D1B31 /* ImageTableViewController.swift in Sources */,
 				8D8A70BC1C22102600DDBEA0 /* Invite.swift in Sources */,
+				8DFFC0FF1C3FACE900825B47 /* SingleCompletedViewController.swift in Sources */,
 				8D28E9E81C0F7D5A009321E9 /* AppError.swift in Sources */,
 				8D28E9E01C0F790C009321E9 /* Constants.swift in Sources */,
 				8DFBCDEC1C1488DE00921959 /* DeckViewCell.swift in Sources */,
