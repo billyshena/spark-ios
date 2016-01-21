@@ -36,6 +36,7 @@
 		8D8A70B81C217C1900DDBEA0 /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */; };
 		8D8A70BC1C22102600DDBEA0 /* Invite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A70BB1C22102600DDBEA0 /* Invite.swift */; };
 		8D979C8F1C0EFC4D002BEF38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */; };
+		8DB74A601C43A136007F1F4A /* ProgressTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB74A5F1C43A136007F1F4A /* ProgressTableCell.swift */; };
 		8DD30FC31C30A3B700C5494F /* ProgressViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */; };
 		8DD70A921C109DE700596846 /* AsideNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD70A911C109DE700596846 /* AsideNavController.swift */; };
 		8DDF8BCB1C342D5B007F950D /* PointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDF8BCA1C342D5B007F950D /* PointViewController.swift */; };
@@ -107,6 +108,7 @@
 		8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
 		8D8A70BB1C22102600DDBEA0 /* Invite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invite.swift; sourceTree = "<group>"; };
 		8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8DB74A5F1C43A136007F1F4A /* ProgressTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTableCell.swift; sourceTree = "<group>"; };
 		8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewCell.swift; sourceTree = "<group>"; };
 		8DD70A911C109DE700596846 /* AsideNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsideNavController.swift; sourceTree = "<group>"; };
 		8DDF8BCA1C342D5B007F950D /* PointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointViewController.swift; sourceTree = "<group>"; };
@@ -169,27 +171,20 @@
 		8D28E9DC1C0F6EB1009321E9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8DB523C11C504D03005F0309 /* question */,
+				8DB74A5E1C439FFF007F1F4A /* aside */,
+				8DB74A5D1C439FE1007F1F4A /* point */,
+				8DB74A5C1C439FCA007F1F4A /* completed */,
+				8DB74A5B1C439FC4007F1F4A /* progress */,
+				8DB74A5A1C439FBB007F1F4A /* deck */,
 				8DFE2E091C2764CD00E48217 /* KDCircularProgress.swift */,
 				8D3214301BC3D96D008FF0B8 /* AppDelegate.swift */,
 				8D3214321BC3D96D008FF0B8 /* HomeViewController.swift */,
 				8D979C8E1C0EFC4D002BEF38 /* LoginViewController.swift */,
-				8D28E9F01C108788009321E9 /* DeckViewController.swift */,
-				8DD70A911C109DE700596846 /* AsideNavController.swift */,
-				8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */,
-				8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */,
-				8D6637AB1C1E4970001D6CF8 /* ProgressViewController.swift */,
-				8D6637AD1C1E49EA001D6CF8 /* CompletedViewController.swift */,
 				8D8A70B71C217C1900DDBEA0 /* InviteViewController.swift */,
-				8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */,
-				8DDF8BCA1C342D5B007F950D /* PointViewController.swift */,
-				8D7E631F1C383C4B000A2B9E /* PointViewCell.swift */,
 				8D3067551C39E55500EDCE11 /* PageViewController.swift */,
 				8D1EF9491C3C7EDD003D1B31 /* ImageTableViewController.swift */,
-				8D2FF90C1C3D770000E75D4A /* ProgressCollectionViewController.swift */,
 				8D2FF9101C3D79A400E75D4A /* HeaderCollectionReusableView.swift */,
-				8DFFC0FE1C3FACE900825B47 /* SingleCompletedViewController.swift */,
-				8DFFC1001C3FCB1200825B47 /* CompletedViewCell.swift */,
-				8DE026DC1C405700003DF303 /* SingleProgressViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -304,6 +299,62 @@
 				8D3214A61BC4493D008FF0B8 /* spark-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DB523C11C504D03005F0309 /* question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = question;
+			sourceTree = "<group>";
+		};
+		8DB74A5A1C439FBB007F1F4A /* deck */ = {
+			isa = PBXGroup;
+			children = (
+				8DE53ECA1C178D1A00B5C18B /* SingleDeckViewController.swift */,
+				8D28E9F01C108788009321E9 /* DeckViewController.swift */,
+				8DFBCDEB1C1488DE00921959 /* DeckViewCell.swift */,
+			);
+			name = deck;
+			sourceTree = "<group>";
+		};
+		8DB74A5B1C439FC4007F1F4A /* progress */ = {
+			isa = PBXGroup;
+			children = (
+				8DB74A5F1C43A136007F1F4A /* ProgressTableCell.swift */,
+				8D2FF90C1C3D770000E75D4A /* ProgressCollectionViewController.swift */,
+				8DE026DC1C405700003DF303 /* SingleProgressViewController.swift */,
+				8DD30FC21C30A3B700C5494F /* ProgressViewCell.swift */,
+				8D6637AB1C1E4970001D6CF8 /* ProgressViewController.swift */,
+			);
+			name = progress;
+			sourceTree = "<group>";
+		};
+		8DB74A5C1C439FCA007F1F4A /* completed */ = {
+			isa = PBXGroup;
+			children = (
+				8DFFC0FE1C3FACE900825B47 /* SingleCompletedViewController.swift */,
+				8DFFC1001C3FCB1200825B47 /* CompletedViewCell.swift */,
+				8D6637AD1C1E49EA001D6CF8 /* CompletedViewController.swift */,
+			);
+			name = completed;
+			sourceTree = "<group>";
+		};
+		8DB74A5D1C439FE1007F1F4A /* point */ = {
+			isa = PBXGroup;
+			children = (
+				8DDF8BCA1C342D5B007F950D /* PointViewController.swift */,
+				8D7E631F1C383C4B000A2B9E /* PointViewCell.swift */,
+			);
+			name = point;
+			sourceTree = "<group>";
+		};
+		8DB74A5E1C439FFF007F1F4A /* aside */ = {
+			isa = PBXGroup;
+			children = (
+				8DD70A911C109DE700596846 /* AsideNavController.swift */,
+			);
+			name = aside;
 			sourceTree = "<group>";
 		};
 		F8DF2D76121BD41B8F963F89 /* Frameworks */ = {
@@ -512,6 +563,7 @@
 				8D3214331BC3D96D008FF0B8 /* HomeViewController.swift in Sources */,
 				8D7E63201C383C4B000A2B9E /* PointViewCell.swift in Sources */,
 				8D28E9EC1C0F7DFE009321E9 /* FBManager.swift in Sources */,
+				8DB74A601C43A136007F1F4A /* ProgressTableCell.swift in Sources */,
 				8D3214311BC3D96D008FF0B8 /* AppDelegate.swift in Sources */,
 				8D28E9E21C0F7C39009321E9 /* User.swift in Sources */,
 				8DDF8BCB1C342D5B007F950D /* PointViewController.swift in Sources */,

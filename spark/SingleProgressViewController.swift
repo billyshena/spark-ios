@@ -63,13 +63,14 @@ class SingleProgressViewController: UITableViewController{
         return 20
     }
     
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("progressCell", forIndexPath: indexPath) as! CompletedViewCell
-//        
-//        return cell
-//    }
-//    
-//    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("progressCell", forIndexPath: indexPath) as! ProgressTableCell
+
+        cell.userImage?.layer.cornerRadius = (cell.userImage?.frame.size.width)! / 2
+        return cell
+    }
+    
+    
     /*
     // MARK: - Navigation
     
